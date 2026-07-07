@@ -1,0 +1,11 @@
+# Robots.txt for Reachzy
+User-agent: *
+Allow: /
+
+# Disallow admin/private paths if any
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Sitemap
+Sitemap: https://reachzy.space/sitemap.xml
