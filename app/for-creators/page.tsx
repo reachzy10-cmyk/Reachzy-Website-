@@ -2,12 +2,16 @@ import type { Metadata } from 'next';
 import { SiteHeader } from '@/components/layout/site-header';
 import { SiteFooter } from '@/components/layout/site-footer';
 import { ForCreatorsHero } from '@/components/sections/for-creators/hero';
-import { WhyReachzy } from '@/components/sections/for-creators/why-reachzy';
-import { BeforeOpportunity } from '@/components/sections/for-creators/before-opportunity';
-import { WhatYouGet } from '@/components/sections/for-creators/what-you-get';
-import { HowItWorks } from '@/components/sections/for-creators/how-it-works';
-import { WhoItsFor } from '@/components/sections/for-creators/who-its-for';
-import { Credibility } from '@/components/sections/for-creators/credibility';
+import { WhyCreatorsWorkWithUs } from '@/components/sections/for-creators/why-creators-work-with-us';
+import { WhatWeActuallyHandle } from '@/components/sections/for-creators/what-we-actually-handle';
+import { OpportunityBriefing } from '@/components/sections/for-creators/opportunity-briefing';
+import { CreatorControl } from '@/components/sections/for-creators/creator-control';
+import { TheFit } from '@/components/sections/for-creators/the-fit';
+import { Economics } from '@/components/sections/for-creators/economics';
+import { TechnologyCategories } from '@/components/sections/for-creators/technology-categories';
+import { CreatorExample } from '@/components/sections/for-creators/creator-example';
+import { GettingStarted } from '@/components/sections/for-creators/getting-started';
+import { FirstConversation } from '@/components/sections/for-creators/first-conversation';
 import { ForCreatorsFinalCta } from '@/components/sections/for-creators/final-cta';
 
 export const metadata: Metadata = {
@@ -26,12 +30,16 @@ export default function ForCreatorsPage() {
       <SiteHeader />
       <main id="main">
         <ForCreatorsHero />
-        <WhyReachzy />
-        <BeforeOpportunity />
-        <WhatYouGet />
-        <HowItWorks />
-        <WhoItsFor />
-        <Credibility />
+        <WhyCreatorsWorkWithUs />
+        <WhatWeActuallyHandle />
+        <OpportunityBriefing />
+        <CreatorControl />
+        <TheFit />
+        <Economics />
+        <TechnologyCategories />
+        <CreatorExample />
+        <GettingStarted />
+        <FirstConversation />
         <ForCreatorsFinalCta />
       </main>
       <SiteFooter />

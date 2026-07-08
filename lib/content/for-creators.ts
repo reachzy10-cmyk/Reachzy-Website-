@@ -1,6 +1,6 @@
 /**
  * For Creators Page Content
- * Source: archive/redesign-planning/copy/for-creators.md (approved)
+ * Source: /reference/for-creators.md (approved, COPY LOCKED)
  */
 
 export const forCreatorsContent = {
@@ -20,7 +20,7 @@ export const forCreatorsContent = {
   hero: {
     eyebrow: 'For creators',
     headline: 'Brand deals should make sense before they reach your inbox.',
-    body: 'Reachzy works with technology-focused creators and brands to develop sponsorship opportunities around the content and audiences that make sense for them. We look for the opportunity first, bring you the details, and let you decide whether it belongs on your channel.',
+    body: 'Reachzy works with technology-focused creators and brands to develop sponsorship opportunities around the content and audiences that make sense for them. We handle the commercial side of the opportunity. You decide what belongs on your channel.',
     primaryCta: {
       label: 'Talk to Reachzy',
       href: 'mailto:partnerships@reachzy.space',
@@ -28,134 +28,240 @@ export const forCreatorsContent = {
     },
   },
 
-  whyReachzyExists: {
-    eyebrow: 'Why Reachzy exists',
-    headline: 'You already spend enough time running the channel.',
+  // SECTION 01 — THE REAL VALUE
+  whyCreatorsWorkWithUs: {
+    eyebrow: 'Why creators work with us',
+    headline: 'You keep running the channel. We handle more of the deal.',
     body: [
-      'There is the content itself.',
-      'Then there are the emails, follow-ups, brand requests, vague proposals, questions about deliverables, and conversations that go nowhere.',
-      'Reachzy exists to take some of that work away from the creator side.',
-      'We look for sponsorship opportunities, filter them around your content and audience, and bring the ones worth considering to you.',
-      'The goal is not to put more offers in your inbox. It is to make the offers that do reach you worth opening.',
+      'There is more to a sponsorship than putting a brand into a video.',
+      'There are emails to answer. Terms to discuss. Deliverables to clarify. Timelines to coordinate. Contracts to move. Payments to follow up on.',
+      'Reachzy handles that commercial work around the opportunity, so you do not have to manage every part of the relationship yourself.',
+      'You still decide what you take on.',
     ],
   },
 
-  beforeOpportunity: {
-    eyebrow: 'Before an opportunity reaches you',
-    headline: 'We filter so you don\'t have to.',
-    steps: [
+  // SECTION 02 — WHAT WE ACTUALLY HANDLE
+  whatWeActuallyHandle: {
+    eyebrow: 'When you choose to explore an opportunity',
+    headline: 'From the first conversation to the final follow-up.',
+    intro: 'Once you want to move forward, Reachzy can handle the commercial communication around the collaboration.',
+    items: [
       {
-        number: '01',
-        title: 'Brand & product research',
-        body: 'We identify brands in technology, productivity, SaaS, and AI that are actively looking for creator collaborations.',
+        title: 'Brand communication',
+        body: 'We keep the conversation with the brand moving and make sure the important details are clear.',
       },
       {
-        number: '02',
-        title: 'Fit assessment',
-        body: 'We evaluate whether the product naturally belongs in your content — does your audience already use tools like this? Would a demonstration feel native?',
+        title: 'Negotiation',
+        body: 'We discuss the commercial terms with the brand and work toward an arrangement that makes sense for the collaboration.',
       },
       {
-        number: '03',
-        title: 'Deal structure',
-        body: 'We clarify format, deliverables, timeline, usage rights, exclusivity, and compensation before the opportunity reaches you.',
+        title: 'Deliverables',
+        body: 'We clarify exactly what is being asked for, so there is no ambiguity around the content or scope.',
       },
       {
-        number: '04',
-        title: 'Your decision',
-        body: 'You receive the full picture. Accept, decline, or ask questions. Nothing moves forward without your approval.',
+        title: 'Contract coordination',
+        body: 'We help move the agreement through the necessary steps.',
+      },
+      {
+        title: 'Payment follow-up',
+        body: 'We stay on top of payment-related communication so you are not left chasing it yourself.',
+      },
+      {
+        title: 'Campaign coordination',
+        body: 'We help keep timelines, deliverables and communication organized as the campaign moves forward.',
       },
     ],
+    whenNeeded: 'When needed: Content approval remains yours. Reachzy does not publish on your behalf.',
   },
 
-  whatYouSee: {
+  // SECTION 03 — OPPORTUNITY BRIEFING (What You See)
+  opportunityBriefing: {
     eyebrow: 'What you see',
     headline: 'Clear deal details. No vague proposals.',
-    cards: [
-      {
-        title: 'Format & Scope',
-        items: ['Integration, dedicated, bundle, or retainer', 'Exact deliverables and timeline', 'Creative direction boundaries'],
-      },
-      {
-        title: 'Commercial Terms',
-        items: ['Compensation amount and structure', 'Payment schedule', 'Affiliate terms if applicable'],
-      },
-      {
-        title: 'Rights & Control',
-        items: ['Usage rights (where, how long)', 'Exclusivity windows', 'Your approval on final cut'],
-      },
+    intro: 'Every opportunity comes with a structured briefing so you can evaluate it quickly.',
+    fields: [
+      { label: 'Brand', description: 'Who is behind the product or company.' },
+      { label: 'Product', description: 'What exactly would you be talking about or demonstrating?' },
+      { label: 'Why it fits', description: 'Why did we think this product belongs on your channel?' },
+      { label: 'Collaboration', description: 'What is the brand asking your channel to do?' },
+      { label: 'Deliverables', description: 'What needs to be created, published or included?' },
+      { label: 'Timeline', description: 'When does the collaboration need to happen?' },
+      { label: 'Commercial terms', description: 'What is the compensation and how is it structured?' },
+      { label: 'Usage / Exclusivity', description: 'Are there any additional rights, restrictions or category limitations?' },
+      { label: 'Next step', description: 'What happens if you decide you are interested?' },
     ],
+    closingLine: 'The point is simple: you should see the full picture before you make a decision.',
   },
 
-  process: {
-    eyebrow: 'The process',
-    headline: 'Four steps. Your call at every one.',
-    steps: [
-      {
-        number: '01',
-        title: 'We identify a fit',
-        body: 'We look for brand opportunities that make sense for your content and audience. If we don\'t have a fit, we don\'t reach out.',
-      },
-      {
-        number: '02',
-        title: 'You see the opportunity',
-        body: 'You receive the relevant details: the brand, the product, what they\'re asking for, the format, the timeline, and the compensation. No vague descriptions.',
-      },
-      {
-        number: '03',
-        title: 'You decide',
-        body: 'Accept, decline, or ask questions. Nothing moves forward without your approval.',
-      },
-      {
-        number: '04',
-        title: 'We coordinate',
-        body: 'If you accept, we handle the coordination, contract logistics, and payment follow-up so you can focus on the content.',
-      },
+  // SECTION 04 — CREATOR CONTROL
+  creatorControl: {
+    eyebrow: 'Your channel. Your decision.',
+    headline: 'You decide what happens next.',
+    options: [
+      { label: 'Interested?', action: 'Continue the conversation.' },
+      { label: 'Not interested?', action: 'Decline it.' },
+      { label: 'Need more information?', action: 'Ask before deciding.' },
     ],
+    body: [
+      'You decide whether the opportunity moves forward.',
+      'You decide how the content should work for your audience.',
+      'You decide what you are comfortable agreeing to.',
+    ],
+    closingLine: 'Nothing moves forward without your approval.',
   },
 
-  whoItsFor: {
-    eyebrow: 'Who this is for',
-    headline: 'Creators whose content connects with products.',
-    body: 'Reachzy is built around creators whose content naturally connects with products, tools, and brands. If your audience watches you build, review, or demonstrate software and tools, there\'s likely a fit.',
+  // SECTION 05 — THE FIT
+  theFit: {
+    eyebrow: 'Why an opportunity reaches you',
+    headline: 'A good brand can still be the wrong sponsorship.',
+    body: [
+      'A product can be good. The brand can have a budget. The campaign can look attractive. And it can still make no sense for your viewers.',
+      'Before an opportunity reaches you, we look at the relationship between:',
+    ],
+    factors: [
+      { label: 'Your content', description: 'What you actually make.' },
+      { label: 'Your audience', description: 'Who watches and why they care.' },
+      { label: 'The product', description: 'What the brand is actually selling.' },
+      { label: 'The campaign', description: 'What the brand wants from the collaboration.' },
+    ],
+    closingLine: 'The goal is not to put more offers in front of you. It is to make the offers that reach you worth considering.',
+  },
+
+  // SECTION 06 — ECONOMICS
+  economics: {
+    eyebrow: 'How working with Reachzy works',
+    headline: 'No fixed cost to work with us.',
+    body: [
+      'You do not need to pay a monthly management fee to have Reachzy involved.',
+      'You do not pay an upfront fee just to join.',
+      'Reachzy earns from the sponsorship work it brings and helps handle when a collaboration happens.',
+      'No upfront fee. No monthly fee. No hidden fee.',
+    ],
+    closingLine: 'The exact commercial arrangement is explained clearly before anything moves forward.',
+    // IMPORTANT: Do not display 15–20% commission figure
+  },
+
+  // SECTION 07 — TECHNOLOGY-FOCUSED CATEGORIES
+  technologyCategories: {
+    eyebrow: 'Where we know the audience best',
+    headline: 'Technology is where Reachzy understands the audience best.',
+    intro: 'We currently focus around creators working in:',
     categories: [
       {
-        name: 'Tech creators',
-        description: 'Reviews, comparisons, and coverage of hardware or software products.',
+        name: 'Tech',
+        description: 'Phones, gadgets, accessories, hardware, consumer technology and software.',
       },
       {
-        name: 'Productivity creators',
-        description: 'Workflows, tools, systems, and processes that help people work better.',
+        name: 'Productivity',
+        description: 'Workflows, systems, productivity tools and apps.',
       },
       {
-        name: 'Software / SaaS creators',
-        description: 'Tutorials, walkthroughs, and demonstrations of apps and digital tools.',
+        name: 'Software & SaaS',
+        description: 'Platforms, tutorials, digital products and software people actually use.',
+      },
+      {
+        name: 'AI',
+        description: 'AI tools, agents, automation and software built around them.',
       },
     ],
-    footnote: 'Best fit: content that demonstrates real usage — not just mentions.',
+    closingParagraph: 'The categories can overlap. A creator might be a tech reviewer who also covers productivity tools. A software creator might also cover AI. A productivity creator might naturally work with SaaS products. The common thread is content that helps people understand, choose or use technology.',
   },
 
-  credibility: {
-    eyebrow: 'Creator proof',
+  // SECTION 08 — CREATOR EXAMPLE
+  creatorExample: {
+    eyebrow: 'A public example of the kind of creator evidence we value',
     headline: 'AI Learners India',
-    tagline: 'AI agents and automation, taught in Hindi to the people who build with them for clients.',
-    description: 'A long-form tutorial channel for Indian freelancers and agency founders working in AI agents, automation, and no-code. Founded and presented by Abhijeet Kalamkar in Pune. 160,000+ subscribers and 8.1M lifetime views, grown without paid promotion. Every video is a live build.',
+    creatorName: 'Abhijeet Kalamkar',
+    categoryLine: 'AI agents · automation · software · Hindi',
     metrics: [
       { value: '160,000+', label: 'Subscribers' },
       { value: '8.1M', label: 'Lifetime views' },
       { value: '4.57 lakh', label: 'Watch hours' },
     ],
+    body: 'A long-form educational creator focused on AI agents, automation and software, with content built around practical use rather than general technology news. The creator\'s public work also demonstrates something Reachzy values: commercial transparency. Past sponsorships, campaign context and performance information are useful because they show more than subscriber count. They show how an audience actually responds to a creator\'s content.',
+    closingLine: 'We carefully evaluate fit before any opportunity is presented. This is the standard we hold for every creator we work with.',
     externalLinks: [
       { label: 'YouTube', href: 'https://www.youtube.com/@AILearnersbyabhijeet', icon: 'youtube' },
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ailearnersindia/', icon: 'linkedin' },
     ],
-    footnote: 'This is the kind of creator Reachzy works with — deep audience trust, technical content, organic growth, real purchasing influence. We\'re not a directory. We\'re selective.',
   },
 
+  // SECTION 09 — GETTING STARTED
+  gettingStarted: {
+    eyebrow: 'Getting started',
+    headline: 'No application. No complicated onboarding.',
+    body: 'You do not need to prepare a long creator profile just to start a conversation.',
+    firstStep: {
+      headline: 'For the first step, we only need a few basics:',
+      items: [
+        'Channel name',
+        'Primary niche',
+        'Typical sponsorship formats',
+        'Typical sponsorship rates',
+        'Preferred time or communication window',
+      ],
+    },
+    sponsorshipHistory: {
+      headline: 'Already have sponsorship history?',
+      body: 'Later, when it becomes useful, you can also share:',
+      items: [
+        'Past brand collaborations',
+        'Previous sponsorship formats',
+        'Media kit',
+        'Campaign examples',
+        'Clicks or conversions',
+        'Performance information',
+        'Creator website',
+        'Anything else that helps us understand your commercial history',
+      ],
+    },
+    closing: 'More context is useful. It does not need to become homework before the first conversation.',
+  },
+
+  // SECTION 10 — THE FIRST CONVERSATION
+  firstConversation: {
+    eyebrow: 'One easy step',
+    headline: 'Tell us a little about your channel.',
+    body: 'The Talk to Reachzy button opens a prepared email so you do not have to write everything from scratch. It will already contain the structure. You only fill in the details that are specific to you and send it.',
+    // Email template is implementation data only — NOT displayed on page
+    emailTemplate: {
+      subject: 'Creator Partnership — [Channel Name]',
+      body: `Hi Reachzy,
+
+I'm interested in working with Reachzy.
+
+Channel name:
+[Fill in]
+
+Primary niche:
+[Fill in]
+
+Typical sponsorship formats:
+[Fill in]
+
+Typical sponsorship rates:
+[Fill in]
+
+Preferred time / communication window:
+[Fill in]
+
+Optional — past sponsorships, campaign examples, performance information, media kit or anything else relevant:
+[Fill in]
+
+Best,
+[Creator name]
+
+Fallback: partnerships@reachzy.space`,
+    },
+  },
+
+  // FINAL CTA
   finalCta: {
-    headline: 'Interested in working with Reachzy?',
-    body: 'If you\'re looking for relevant brand opportunities that fit your content, get in touch.',
+    headline: 'Your content comes first.',
+    subheadline: 'Let the right opportunities follow.',
+    body: 'You already spend enough time making the channel work. Reachzy handles more of the commercial side so you do not have to. The first conversation is lightweight. The fit comes first. The details follow.',
     cta: {
-      label: 'Contact Reachzy',
+      label: 'Talk to Reachzy',
       href: 'mailto:partnerships@reachzy.space',
       variant: 'coral',
     },
@@ -164,15 +270,17 @@ export const forCreatorsContent = {
 
   footer: {
     logo: 'Reachzy',
-    tagline: 'An influencer marketing agency running brand collaborations with a small, deliberately chosen roster of creators. Fit first, always.',
-    navigation: [
+    links: [
       { label: 'Home', href: '/' },
       { label: 'For Brands', href: '/for-brands' },
       { label: 'For Creators', href: '/for-creators' },
     ],
-    contact: 'partnerships@reachzy.space',
+    social: [
+      { label: 'Email', href: 'mailto:partnerships@reachzy.space', icon: 'mail' },
+      { label: 'LinkedIn', href: 'https://linkedin.com/company/reachzy', icon: 'linkedin' },
+      { label: 'YouTube', href: 'https://youtube.com/@reachzy', icon: 'youtube' },
+      { label: 'X', href: 'https://x.com/reachzy', icon: 'x' },
+    ],
     copyright: '© 2026 Reachzy. All rights reserved.',
   },
 };
-
-export type ForCreatorsContent = typeof forCreatorsContent;
