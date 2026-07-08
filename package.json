@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "opennextjs-cloudflare build",
+    "build": "next build",
     "build:cloudflare": "opennextjs-cloudflare build",
     "preview:cloudflare": "opennextjs-cloudflare preview",
     "deploy:cloudflare": "wrangler deploy",
-    "start": "next start"
+    "start": "next start",
+    "open-next:build": "opennextjs-cloudflare build"
   },
   "dependencies": {
     "@vercel/analytics": "1.6.1",
