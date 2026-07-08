@@ -1,6 +1,0 @@
-packages:
-  - '.'
-
-minimumReleaseAgeExclude:
-  - '@next/*'
-  - next
