@@ -23,8 +23,8 @@ export function CampaignEvidence() {
 
   return (
     <section className="border-b border-border">
-      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-32">
-        <ScrollReveal delay={100} direction="up" className="max-w-3xl mb-12 lg:mb-16">
+      <div className="mx-auto w-full max-w-7xl px-6 py-14 md:px-8 md:py-20 lg:py-24">
+        <ScrollReveal delay={100} direction="up" className="max-w-3xl mb-9 lg:mb-10">
           <h2 className="text-balance font-serif text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight text-foreground">
             {campaignEvidence.headline}
           </h2>

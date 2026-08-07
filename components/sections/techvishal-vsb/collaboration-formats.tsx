@@ -1,0 +1,36 @@
+'use client';
+
+import { techvishalVsbContent } from '@/lib/content/techvishal-vsb';
+import { Card } from '@/components/ui/card';
+import { ScrollReveal, StaggeredReveal } from '@/components/ui/scroll-reveal';
+import { Video, Smartphone, FileKey } from 'lucide-react';
+
+const formatIcons = { 'Dedicated Video': Video, 'Shorts / Reel': Smartphone, 'Content Usage Rights (30 Days)': FileKey };
+
+export function CollaborationFormats() {
+  const { collaborationFormats } = techvishalVsbContent;
+  return (
+    <section className="border-b border-border">
+      <div className="mx-auto w-full max-w-7xl px-6 py-14 md:px-8 md:py-20">
+        <ScrollReveal direction="up" className="mb-9 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">{collaborationFormats.eyebrow}</p>
+          <h2 className="mt-3 font-serif text-3xl leading-tight text-foreground md:text-4xl">{collaborationFormats.headline}</h2>
+          <p className="mt-3 leading-relaxed text-muted-foreground">{collaborationFormats.intro}</p>
+        </ScrollReveal>
+        <StaggeredReveal staggerDelay={80} direction="up" className="grid gap-4 md:grid-cols-3">
+          {collaborationFormats.formats.map((format) => {
+            const Icon = formatIcons[format.name as keyof typeof formatIcons] || Video;
+            return <Card key={format.name} variant="pricing" hoverable={false} className="flex h-full flex-col p-5">
+              <Icon className="size-5 text-primary" aria-hidden="true" />
+              <h3 className="mt-4 font-serif text-xl text-foreground">{format.name}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{format.description}</p>
+              <p className="mt-5 font-mono text-3xl font-semibold text-foreground">{format.rate}</p>
+              <p className="mt-2 flex-1 text-xs leading-relaxed text-muted-foreground">{format.details}</p>
+            </Card>;
+          })}
+        </StaggeredReveal>
+        <p className="mt-6 rounded-xl border border-border bg-secondary/40 p-5 text-sm leading-relaxed text-muted-foreground">{collaborationFormats.terms}</p>
+      </div>
+    </section>
+  );
+}

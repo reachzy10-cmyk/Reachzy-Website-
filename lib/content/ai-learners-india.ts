@@ -19,8 +19,9 @@ export const aiLearnersIndiaContent = {
 
   hero: {
     portrait: '/creators/ai-learners-india-profile.jpg',
-    portraitAlt: 'AI Learners India channel profile — Abhijeet Kalamkar, founder',
-    eyebrow: 'AI Learners India',
+    portraitAlt: 'AI Learners India official channel artwork',
+    eyebrow: 'Creator profile',
+    headline: 'AI and automation, explained through practical workflows.',
     tagline: 'AI agents and automation, taught in Hindi to the people who build with them for clients.',
     metrics: [
       { value: '160,000+', label: 'Subscribers' },
@@ -41,11 +42,11 @@ export const aiLearnersIndiaContent = {
   },
 
   background: {
-    headline: '15 years of visual storytelling. One channel built for the people doing the work.',
+    headline: 'Practical workflows, explained from the first step to the final build.',
     body: [
       'Abhijeet Kalamkar started in film production, working across documentaries and commercial projects in Pune. That background — editing, pacing, lighting, knowing when to hold a shot — is why AI Learners India tutorials feel like something you watch to the end, not background noise.',
       'The channel launched to teach automation and AI agents in Hindi to Indian freelancers and agency founders who were being left out of the English-first conversation. No hype, no "this will change everything" thumbnails. Just someone building the workflow live, explaining the logic, and showing where it breaks.',
-      '160,000+ subscribers and 8.1M views came without a single paid promotion. The audience is there because the content solves a problem they\'re being paid to solve.',
+      'The channel reports 160,000+ subscribers and 8.1M lifetime views, with growth described as organic in the supplied channel materials.',
     ],
     details: [
       { label: 'Founder', value: 'Abhijeet Kalamkar' },
@@ -59,7 +60,7 @@ export const aiLearnersIndiaContent = {
 
   contentPerformance: {
     headline: 'Top performing content',
-    description: 'These videos represent the channel\'s core — live builds of workflows the audience actually ships for clients. Metrics are 30-day rolling where noted.',
+    description: 'Selected channel videos and the performance figures supplied with the creator materials. View counts and video metrics are presented as provided, not as guaranteed future performance.',
     videos: [
       {
         title: 'Build an AI Agent That Writes Code for You',
@@ -106,7 +107,7 @@ export const aiLearnersIndiaContent = {
 
   campaignEvidence: {
     headline: 'Published campaign evidence',
-    description: 'All figures from brand affiliate dashboards. Reference calls available on request.',
+    description: 'The following campaign figures were supplied from brand affiliate dashboards. Each metric retains its original definition; clicks, signups and paid customers are not interchangeable.',
     campaigns: [
       {
         brand: 'Hostinger',
@@ -124,15 +125,15 @@ export const aiLearnersIndiaContent = {
       {
         brand: 'GoHighLevel',
         logo: null,
-        period: 'November 2025 – April 2026',
-        type: 'Bundle (Dedicated + 2 Integrations)',
+        period: 'Nov 2025 – Apr 2026',
+        type: 'Integration + Dedicated',
         metrics: [
           { label: 'Clicks', value: '3,969' },
           { label: 'Qualified signups', value: '871' },
           { label: 'Click-to-signup', value: '21.9%' },
-          { label: 'Post-publish signups (6mo)', value: 'Still arriving' },
+          { label: 'Ongoing signups', value: 'Signups still arriving 6 months post-publish' },
         ],
-        detail: 'Dedicated video on agency sub-account setup. Two integrations in follow-up client workflow builds. Long-tail search traffic delivering signups months after publish.',
+        detail: 'Integrations in automation workflows. Dedicated video on CRM setup for agency founders. Long-tail conversion from search.',
       },
       {
         brand: 'Blotato',
@@ -156,27 +157,27 @@ export const aiLearnersIndiaContent = {
       {
         number: '01',
         title: 'Brief received',
-        body: 'Brand shares product, audience, objective, timeline, and budget range. We confirm fit with the channel and audience.',
+        body: 'The brand shares its product, intended audience, objective, preferred timing and budget range. The opportunity is assessed against the channel and content.',
       },
       {
         number: '02',
         title: 'Angle & format proposed',
-        body: 'We propose the format (integration, dedicated, bundle), the creative angle (which workflow the product fits into), and the timeline. One revision on angle before scripting.',
+        body: 'The proposed format and creative angle are discussed, including the workflow in which the product could be demonstrated. Timing is confirmed against the content schedule.',
       },
       {
         number: '03',
         title: 'Script review',
-        body: 'Talking points and key messaging shared before shoot. Brand reviews and approves or requests changes. One revision round included.',
+        body: 'Key talking points are shared for review before recording. The supplied collaboration terms include one revision round at the script/angle stage.',
       },
       {
         number: '04',
         title: 'Production & publish',
-        body: 'Creator shoots, edits, and publishes on agreed date. Reachzy coordinates timeline, deliverables, and any required brand assets (logos, footage, tracking links).',
+        body: 'The creator produces and publishes the agreed content. Reachzy coordinates the agreed timeline, deliverables and required brand assets.',
       },
       {
         number: '05',
         title: '30-day report',
-        body: 'Views, watch time, click-through, affiliate conversions. Presented in a single document with context on what the numbers mean for the product.',
+        body: 'The supplied process describes a 30-day report covering views, watch time, click-through and affiliate conversions where applicable.',
       },
     ],
   },
@@ -211,9 +212,15 @@ export const aiLearnersIndiaContent = {
     ],
   },
 
+  creatorRoll: {
+    eyebrow: 'Explore more creators',
+    headline: 'Looking for a different audience?',
+    supportingCopy: 'Explore other creators across technology, AI, productivity, software and related categories to find a relevant fit for your campaign.',
+  },
+
   finalCta: {
     headline: 'Start a campaign with AI Learners India.',
-    body: 'Send the brief. We\'ll come back with the angle, format, and a written proposal within 48 business hours.',
+    body: 'Share the product, campaign objective, preferred timing and budget. The team can review the brief and discuss whether the opportunity fits the channel.',
     cta: {
       label: 'Start a campaign',
       href: 'mailto:partnerships@reachzy.space?subject=Campaign%20Inquiry%20%E2%80%94%20AI%20Learners%20India',
@@ -224,7 +231,7 @@ export const aiLearnersIndiaContent = {
 
   footer: {
     logo: 'Reachzy',
-    tagline: 'An influencer marketing agency running brand collaborations with a small, deliberately chosen roster of creators. Fit first, always.',
+    tagline: 'Creator partnerships across technology, productivity, software, SaaS and AI. Fit first, always.',
     navigation: [
       { label: 'Home', href: '/' },
       { label: 'For Brands', href: '/for-brands' },

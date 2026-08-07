@@ -10,12 +10,12 @@ export function CreatorBackground() {
 
   return (
     <section className="border-b border-border">
-      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-32">
+      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-20">
         <ScrollReveal delay={100} direction="up" className="max-w-4xl">
           <h2 className="text-balance font-serif text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight text-foreground">
             {background.headline}
           </h2>
-          <div className="mt-8 space-y-6 text-pretty leading-relaxed text-muted-foreground lg:text-base">
+          <div className="mt-6 space-y-4 text-pretty leading-relaxed text-muted-foreground lg:text-base">
             {background.body.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>
             ))}

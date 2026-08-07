@@ -2,36 +2,16 @@
 
 import { Button } from '@/components/ui/button';
 import { forBrandsContent } from '@/lib/content/for-brands';
-import { clsx } from 'clsx';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { ScrollReveal, StaggeredReveal } from '@/components/ui/scroll-reveal';
+import { ScrollReveal } from '@/components/ui/scroll-reveal';
 
 export function ForBrandsFinalCta() {
   const { finalCta } = forBrandsContent;
-
   return (
-    <section className="bg-primary/5 border-t border-border">
-      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-32">
-        <ScrollReveal delay={100} direction="up" className="text-center max-w-3xl mx-auto">
-          <StaggeredReveal staggerDelay={120} direction="up">
-            <h2 className="text-balance font-serif text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight text-foreground">
-              {finalCta.headline}
-            </h2>
-            <p className="mt-5 text-pretty leading-relaxed text-muted-foreground lg:text-base">
-              {finalCta.body}
-            </p>
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-center">
-              <Button asChild variant={finalCta.cta.variant as 'primary' | 'ghost' | 'secondary' | 'coral'} size="lg">
-                <Link href={finalCta.cta.href} className="flex items-center gap-2">
-                  {finalCta.cta.label}
-                  <ArrowRight className="size-4" />
-                </Link>
-              </Button>
-            </div>
-            <p className="mt-6 text-sm text-muted-foreground">{finalCta.microcopy}</p>
-          </StaggeredReveal>
-        </ScrollReveal>
+    <section className="border-t border-border bg-primary/5">
+      <div className="mx-auto w-full max-w-7xl px-6 py-14 md:px-8 md:py-16 lg:py-20">
+        <ScrollReveal delay={80} direction="up" className="mx-auto max-w-3xl text-center"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Start with the brief</p><h2 className="mt-4 text-balance font-serif text-3xl leading-tight text-foreground md:text-4xl lg:text-5xl">{finalCta.headline}</h2><p className="mt-4 leading-relaxed text-muted-foreground">{finalCta.body}</p><Button asChild variant="primary" size="lg" className="mt-8"><Link href={finalCta.cta.href}>{finalCta.cta.label}<ArrowRight className="size-4" /></Link></Button><p className="mt-4 text-xs text-muted-foreground">{finalCta.microcopy}</p></ScrollReveal>
       </div>
     </section>
   );

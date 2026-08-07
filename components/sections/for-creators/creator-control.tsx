@@ -1,68 +1,21 @@
 'use client';
 
-import { Card } from '@/components/ui/card';
-import { forCreatorsContent } from '@/lib/content/for-creators';
-import { clsx } from 'clsx';
 import { ScrollReveal, StaggeredReveal } from '@/components/ui/scroll-reveal';
-import { ArrowRight, X, HelpCircle } from 'lucide-react';
+import { Check, MessageCircle, X } from 'lucide-react';
+
+const options = [
+  { icon: Check, label: 'Interested?', action: 'Continue the conversation and clarify the details.' },
+  { icon: MessageCircle, label: 'Need more information?', action: 'Ask questions before deciding.' },
+  { icon: X, label: 'Not a fit?', action: 'Decline the opportunity.' },
+];
 
 export function CreatorControl() {
-  const { creatorControl } = forCreatorsContent;
-
   return (
     <section className="border-b border-border">
-      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-32">
-        <ScrollReveal delay={100} direction="up" className="max-w-3xl mb-12 lg:mb-16">
-          <p className="text-sm font-medium uppercase tracking-[0.16em] text-[var(--accent-coral)]">
-            {creatorControl.eyebrow}
-          </p>
-          <h2 className="mt-4 text-balance font-serif text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight text-foreground">
-            {creatorControl.headline}
-          </h2>
-        </ScrollReveal>
-
-        <ScrollReveal delay={200} direction="up">
-          <StaggeredReveal staggerDelay={150} direction="up" className="grid gap-6 md:grid-cols-3">
-            {creatorControl.options.map((option, index) => {
-              const icons = {
-                0: ArrowRight,
-                1: X,
-                2: HelpCircle,
-              };
-              const Icon = icons[index as keyof typeof icons];
-
-              return (
-                <Card key={index} variant="default" hoverable className="p-6 text-center">
-                  <div className="inline-flex items-center justify-center size-12 rounded-lg bg-primary/10 text-primary mb-4">
-                    <Icon className="size-5" aria-hidden="true" />
-                  </div>
-                  <h3 className="font-serif text-lg font-medium text-foreground mb-1">
-                    {option.label}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {option.action}
-                  </p>
-                </Card>
-              );
-            })}
-          </StaggeredReveal>
-        </ScrollReveal>
-
-        <ScrollReveal delay={300} direction="up" className="mt-12 max-w-3xl mx-auto">
-          <div className="space-y-4 text-center md:text-left">
-            {creatorControl.body.map((paragraph, index) => (
-              <p key={index} className="text-muted-foreground leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        </ScrollReveal>
-
-        <ScrollReveal delay={400} direction="up" className="mt-10 text-center">
-          <p className="text-sm text-muted-foreground italic">
-            {creatorControl.closingLine}
-          </p>
-        </ScrollReveal>
+      <div className="mx-auto w-full max-w-7xl px-6 py-14 md:px-8 md:py-16 lg:py-20">
+        <ScrollReveal delay={80} direction="up" className="max-w-3xl"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent-coral)]">Your channel. Your decision.</p><h2 className="mt-4 font-serif text-3xl leading-tight text-foreground md:text-4xl">You decide what happens next.</h2><p className="mt-4 leading-relaxed text-muted-foreground">You decide whether the opportunity moves forward, what you are comfortable agreeing to and how the content should work for your audience.</p></ScrollReveal>
+        <StaggeredReveal staggerDelay={80} direction="up" className="mt-8 grid gap-3 md:grid-cols-3">{options.map(({ icon: Icon, label, action }) => <article key={label} className="rounded-xl border border-border bg-card p-5"><Icon className="size-5 text-[var(--accent-coral)]"/><h3 className="mt-4 font-serif text-lg text-foreground">{label}</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">{action}</p></article>)}</StaggeredReveal>
+        <p className="mt-5 text-sm text-muted-foreground">Nothing moves forward without your agreement to the opportunity and its terms.</p>
       </div>
     </section>
   );

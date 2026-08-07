@@ -1,79 +1,38 @@
 'use client';
 
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
 import { homeContent } from '@/lib/content/home';
-import { clsx } from 'clsx';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import { ScrollReveal, StaggeredReveal } from '@/components/ui/scroll-reveal';
+import { ScrollReveal } from '@/components/ui/scroll-reveal';
+
+type ButtonVariant = 'primary' | 'secondary' | 'ghost' | 'coral' | undefined;
 
 export function DualPath() {
   const { dualPath } = homeContent;
-
   return (
     <section className="border-b border-border">
-      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-32">
-        <ScrollReveal delay={100} direction="up">
-          <div className="text-center max-w-2xl mx-auto mb-12 lg:mb-16">
-            <p className="text-sm font-medium uppercase tracking-[0.16em] text-primary">
-              {dualPath.eyebrow}
-            </p>
-            <h2 className="mt-4 text-balance font-serif text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight text-foreground">
-              {dualPath.headline}
-            </h2>
+      <div className="mx-auto w-full max-w-7xl px-6 py-14 md:px-8 md:py-16 lg:py-20">
+        <ScrollReveal delay={80} direction="up">
+          <div className="mx-auto mb-9 max-w-2xl text-center">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">{dualPath.eyebrow}</p>
+            <h2 className="mt-3 font-serif text-3xl leading-tight text-foreground md:text-4xl">{dualPath.headline}</h2>
           </div>
         </ScrollReveal>
-
-        <ScrollReveal delay={200} direction="up">
-          <StaggeredReveal staggerDelay={200} direction="up" className="grid gap-8 md:grid-cols-2">
-            {/* For Brands Card */}
-            <Card variant="default" hoverable={false} className="h-full flex flex-col">
-              <div className="flex-1">
-                <h3 className="font-serif text-2xl font-medium text-foreground">
-                  {dualPath.brandCard.headline}
-                </h3>
-                <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-                  {dualPath.brandCard.body}
-                </p>
-              </div>
-              <Button
-                asChild
-                variant={dualPath.brandCard.cta.variant}
-                size="md"
-                className="mt-6 w-full sm:w-auto"
-              >
-                <Link href={dualPath.brandCard.cta.href}>
-                  {dualPath.brandCard.cta.label}
-                  <ArrowRight className="size-4" />
-                </Link>
-              </Button>
-            </Card>
-
-            {/* For Creators Card */}
-            <Card variant="default" hoverable={false} className="h-full flex flex-col border-[var(--accent-coral)]/30">
-              <div className="flex-1">
-                <h3 className="font-serif text-2xl font-medium text-foreground">
-                  {dualPath.creatorCard.headline}
-                </h3>
-                <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-                  {dualPath.creatorCard.body}
-                </p>
-              </div>
-              <Button
-                asChild
-                variant={dualPath.creatorCard.cta.variant as any}
-                size="md"
-                className="mt-6 w-full sm:w-auto"
-              >
-                <Link href={dualPath.creatorCard.cta.href}>
-                  {dualPath.creatorCard.cta.label}
-                  <ArrowRight className="size-4" />
-                </Link>
-              </Button>
-            </Card>
-          </StaggeredReveal>
-        </ScrollReveal>
+        <div className="grid gap-4 md:grid-cols-2">
+          <article className="flex h-full flex-col rounded-xl border border-primary/30 bg-card p-6 md:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">01 / Brand side</p>
+            <h3 className="mt-4 font-serif text-2xl text-foreground">{dualPath.brandCard.headline}</h3>
+            <p className="mt-3 flex-1 leading-relaxed text-muted-foreground">{dualPath.brandCard.body}</p>
+            <Button asChild variant={dualPath.brandCard.cta.variant as ButtonVariant} size="md" className="mt-6 w-full justify-between sm:w-auto"><Link href={dualPath.brandCard.cta.href}>{dualPath.brandCard.cta.label}<ArrowRight className="size-4" /></Link></Button>
+          </article>
+          <article className="flex h-full flex-col rounded-xl border border-[var(--accent-coral)]/30 bg-card p-6 md:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent-coral)]">02 / Creator side</p>
+            <h3 className="mt-4 font-serif text-2xl text-foreground">{dualPath.creatorCard.headline}</h3>
+            <p className="mt-3 flex-1 leading-relaxed text-muted-foreground">{dualPath.creatorCard.body}</p>
+            <Button asChild variant={dualPath.creatorCard.cta.variant as ButtonVariant} size="md" className="mt-6 w-full justify-between sm:w-auto"><Link href={dualPath.creatorCard.cta.href}>{dualPath.creatorCard.cta.label}<ArrowRight className="size-4" /></Link></Button>
+          </article>
+        </div>
       </div>
     </section>
   );

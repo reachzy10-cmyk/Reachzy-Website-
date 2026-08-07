@@ -3,43 +3,36 @@ import { SiteHeader } from '@/components/layout/site-header';
 import { SiteFooter } from '@/components/layout/site-footer';
 import { ForCreatorsHero } from '@/components/sections/for-creators/hero';
 import { WhyCreatorsWorkWithUs } from '@/components/sections/for-creators/why-creators-work-with-us';
-import { WhatWeActuallyHandle } from '@/components/sections/for-creators/what-we-actually-handle';
-import { OpportunityBriefing } from '@/components/sections/for-creators/opportunity-briefing';
-import { CreatorControl } from '@/components/sections/for-creators/creator-control';
 import { TheFit } from '@/components/sections/for-creators/the-fit';
-import { Economics } from '@/components/sections/for-creators/economics';
 import { TechnologyCategories } from '@/components/sections/for-creators/technology-categories';
-import { CreatorExample } from '@/components/sections/for-creators/creator-example';
+import { OpportunityBriefing } from '@/components/sections/for-creators/opportunity-briefing';
 import { GettingStarted } from '@/components/sections/for-creators/getting-started';
-import { FirstConversation } from '@/components/sections/for-creators/first-conversation';
+import { CreatorControl } from '@/components/sections/for-creators/creator-control';
+import { CreatorRoll } from '@/components/sections/creator-roll';
+import { CreatorFaq } from '@/components/sections/for-creators/creator-faq';
 import { ForCreatorsFinalCta } from '@/components/sections/for-creators/final-cta';
 
 export const metadata: Metadata = {
   title: 'For Creators — Reachzy',
-  description:
-    'Reachzy helps creators find relevant sponsorship opportunities. Right-fit deals, clear details, your approval always.',
+  description: 'Explore how Reachzy approaches relevant sponsorship opportunities, clear commercial terms and creator-led decisions.',
   alternates: { canonical: '/for-creators' },
 };
 
 export default function ForCreatorsPage() {
   return (
     <div className="min-h-screen bg-background">
-      <a href="#main" className="skip-link">
-        Skip to main content
-      </a>
+      <a href="#main" className="skip-link">Skip to main content</a>
       <SiteHeader />
       <main id="main">
         <ForCreatorsHero />
         <WhyCreatorsWorkWithUs />
-        <WhatWeActuallyHandle />
-        <OpportunityBriefing />
-        <CreatorControl />
         <TheFit />
-        <Economics />
         <TechnologyCategories />
-        <CreatorExample />
+        <OpportunityBriefing />
         <GettingStarted />
-        <FirstConversation />
+        <CreatorControl />
+        <CreatorRoll heading="A few creator profiles worth exploring." description="Explore selected profiles across technology, productivity, software and AI. Each creator brings a distinct content style and audience context." ctaHref={null} />
+        <CreatorFaq />
         <ForCreatorsFinalCta />
       </main>
       <SiteFooter />

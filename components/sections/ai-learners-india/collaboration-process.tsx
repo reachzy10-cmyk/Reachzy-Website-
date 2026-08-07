@@ -1,40 +1,24 @@
 'use client';
 
 import { aiLearnersIndiaContent } from '@/lib/content/ai-learners-india';
-import { clsx } from 'clsx';
 import { ScrollReveal, StaggeredReveal } from '@/components/ui/scroll-reveal';
 
 export function CollaborationProcess() {
   const { collaborationProcess } = aiLearnersIndiaContent;
-
   return (
     <section className="border-b border-border">
-      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-32">
-        <ScrollReveal delay={100} direction="up" className="max-w-3xl mb-12 lg:mb-16">
-          <h2 className="text-balance font-serif text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight text-foreground">
-            {collaborationProcess.headline}
-          </h2>
+      <div className="mx-auto w-full max-w-7xl px-6 py-14 md:px-8 md:py-20">
+        <ScrollReveal direction="up" className="mb-9 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">Campaign workflow</p>
+          <h2 className="mt-3 font-serif text-3xl leading-tight text-foreground md:text-4xl">{collaborationProcess.headline}</h2>
         </ScrollReveal>
-
-        <ScrollReveal delay={200} direction="up">
-          <StaggeredReveal staggerDelay={200} direction="up" className="space-y-8 md:space-y-12 max-w-4xl">
-            {collaborationProcess.steps.map((step, index) => (
-              <div key={index} className="flex gap-4">
-                <span className="font-mono text-4xl md:text-5xl font-medium text-muted-foreground/30 flex-shrink-0 mt-1 md:mt-0 w-16 text-right">
-                  {step.number}
-                </span>
-                <div className="flex-1 min-w-0">
-                  <h3 className="font-serif text-xl md:text-2xl font-medium text-foreground">
-                    {step.title}
-                  </h3>
-                  <p className="mt-2 text-pretty leading-relaxed text-muted-foreground">
-                    {step.body}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </StaggeredReveal>
-        </ScrollReveal>
+        <StaggeredReveal staggerDelay={70} direction="up" className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          {collaborationProcess.steps.map((step) => <article key={step.number} className="rounded-xl border border-border bg-card p-5">
+            <span className="font-mono text-sm text-primary">{step.number}</span>
+            <h3 className="mt-3 font-serif text-xl text-foreground">{step.title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.body}</p>
+          </article>)}
+        </StaggeredReveal>
       </div>
     </section>
   );

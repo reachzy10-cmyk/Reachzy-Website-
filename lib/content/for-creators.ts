@@ -113,51 +113,51 @@ export const forCreatorsContent = {
   // SECTION 05 — THE FIT
   theFit: {
     eyebrow: 'Why an opportunity reaches you',
-    headline: 'A good brand can still be the wrong sponsorship.',
+    headline: 'We look for fit before we reach out.',
     body: [
-      'A product can be good. The brand can have a budget. The campaign can look attractive. And it can still make no sense for your viewers.',
-      'Before an opportunity reaches you, we look at the relationship between:',
+      'Reachzy does not mass-pitch. We research the channel, the audience and the content before making a recommendation.',
+      'The fit criteria include:',
     ],
-    factors: [
-      { label: 'Your content', description: 'What you actually make.' },
-      { label: 'Your audience', description: 'Who watches and why they care.' },
-      { label: 'The product', description: 'What the brand is actually selling.' },
-      { label: 'The campaign', description: 'What the brand wants from the collaboration.' },
+    criteria: [
+      'The product belongs in the creator\'s existing content world.',
+      'The audience already uses or buys tools like the one being promoted.',
+      'The creator has editorial control and a track record of maintaining audience trust.',
+      'The channel grows organically, not through paid promotion or giveaways.',
     ],
-    closingLine: 'The goal is not to put more offers in front of you. It is to make the offers that reach you worth considering.',
+    closingLine: 'If the fit is not there, we do not reach out. That saves everyone time.',
   },
 
-  // SECTION 06 — ECONOMICS
-  economics: {
-    eyebrow: 'How working with Reachzy works',
-    headline: 'No fixed cost to work with us.',
+  // SECTION 06 — WHAT WE DON'T DO
+  whatWeDontDo: {
+    eyebrow: 'What we don\'t do',
+    headline: 'No guarantees. No mandates. No surprises.',
     body: [
-      'You do not need to pay a monthly management fee to have Reachzy involved.',
-      'You do not pay an upfront fee just to join.',
-      'Reachzy earns from the sponsorship work it brings and helps handle when a collaboration happens.',
-      'No upfront fee. No monthly fee. No hidden fee.',
+      'We do not guarantee sponsorship volume, earnings or campaign outcomes.',
+      'We do not require exclusivity unless you choose it.',
+      'We do not publish on your behalf.',
+      'We do not pressure you to take opportunities that do not fit.',
+      'We do not take a percentage of your revenue without a clear, agreed arrangement.',
     ],
-    closingLine: 'The exact commercial arrangement is explained clearly before anything moves forward.',
-    // IMPORTANT: Do not display 15–20% commission figure
+    closingLine: 'The relationship is straightforward: we bring opportunities, you decide.',
   },
 
-  // SECTION 07 — TECHNOLOGY-FOCUSED CATEGORIES
-  technologyCategories: {
-    eyebrow: 'Where we know the audience best',
-    headline: 'Technology is where Reachzy understands the audience best.',
-    intro: 'We currently focus around creators working in:',
-    categories: [
+  // SECTION 07 — CATEGORIES WE WORK WITH
+  categories: {
+    eyebrow: 'Creator categories we work with',
+    headline: 'Technology, productivity, software, AI and the people who build with them.',
+    intro: 'Reachzy works with creators whose content helps people understand, choose or use technology in their work.',
+    items: [
       {
-        name: 'Tech',
-        description: 'Phones, gadgets, accessories, hardware, consumer technology and software.',
+        name: 'Technology',
+        description: 'Software, hardware, developer tools, infrastructure and the ecosystems around them.',
       },
       {
         name: 'Productivity',
-        description: 'Workflows, systems, productivity tools and apps.',
+        description: 'Workflows, automation, no-code, SaaS and tools that help people ship work faster.',
       },
       {
         name: 'Software & SaaS',
-        description: 'Platforms, tutorials, digital products and software people actually use.',
+        description: 'B2B software, developer platforms, CRMs, analytics, and digital products people actually use.',
       },
       {
         name: 'AI',

@@ -1,0 +1,247 @@
+import { CampaignEvidenceItem } from '@/components/ui/campaign-table';
+
+export const pavanLalwaniContent = {
+  hero: {
+    eyebrow: 'Creator profile',
+    headline: 'Learning made practical. Skills built for work.',
+    tagline: 'Pavan Lalwani Academy creates educational content across AI, data analytics, Excel, Power BI, business intelligence and productivity — helping students and professionals build technical skills they can put to use.',
+    portrait: null,
+    portraitAlt: 'Pavan Lalwani',
+    metrics: [
+      { value: '339.9K', label: 'YouTube Subscribers' },
+      { value: '1.1M', label: 'Views (Last 28 Days)' },
+      { value: '949', label: 'Videos Published (Lifetime)' },
+    ],
+    externalLinks: [
+      { icon: 'youtube', label: 'YouTube', href: 'https://youtube.com/@pavanlalwani' },
+      { icon: 'linkedin', label: 'LinkedIn', href: 'https://linkedin.com/in/pavanlalwani' },
+      { icon: 'twitter', label: 'X (Twitter)', href: 'https://x.com/pavanlalwani' },
+      { icon: 'instagram', label: 'Instagram', href: 'https://instagram.com/pavanlalwani' },
+    ],
+    cta: {
+      label: 'Discuss a Campaign',
+      href: 'mailto:partnerships@reachzy.space',
+      variant: 'primary',
+    },
+    sourceNote: 'Figures are reported in the media kit generated October 8, 2026.',
+  },
+
+  channelReach: {
+    eyebrow: 'The channel at a glance',
+    headline: 'Practical learning for people building technical skills.',
+    intro: 'Pavan Lalwani Academy focuses on clear, educational content that helps learners understand tools and apply them to real work and business tasks.',
+    statistics: [
+      { value: '339.9K', label: 'Subscribers', context: 'Lifetime figure shown in the supplied media kit' },
+      { value: '949', label: 'Videos Published', context: 'Lifetime total shown in the supplied media kit' },
+      { value: '1.1M', label: 'Views (Last 28 Days)', context: 'Reported for the last 28 days' },
+      { value: '223.4K', label: 'Unique Viewers', context: 'Reported in the supplied channel statistics (Last 28 Days)' },
+      { value: '30.6K', label: 'Watch Time (Hours)', context: 'Reported for the last 28 days' },
+      { value: '3:47', label: 'Avg View Duration', context: 'Reported in the supplied channel statistics' },
+      { value: '9.1%', label: 'Avg Percentage Viewed', context: 'Reported in the supplied channel statistics' },
+      { value: '27.9%', label: 'Returning Viewers', context: 'Reported in the supplied channel statistics' },
+    ],
+    dataNote: 'The media kit\'s channel-statistics panel is labelled "Last 28 days"; subscriber and video-count tiles are explicitly labelled as lifetime figures. The remaining metrics are presented as channel statistics for the reporting panel. Refresh figures before publication if a newer media kit becomes available.',
+  },
+
+  channelCoverage: {
+    eyebrow: 'Learning through technology',
+    headline: 'Tools, workflows and skills people can use.',
+    intro: 'The channel\'s focus combines technical education with practical applications for learners and working professionals.',
+    topics: [
+      {
+        title: 'AI Tools',
+        description: 'Practical learning around AI tools and the ways they can support work and productivity.',
+      },
+      {
+        title: 'Data Analytics',
+        description: 'Skills and workflows for understanding, working with and presenting data.',
+      },
+      {
+        title: 'Excel',
+        description: 'Spreadsheet skills and practical techniques for everyday analysis and work.',
+      },
+      {
+        title: 'Power BI and Business Intelligence',
+        description: 'Dashboards, reporting and tools that help turn data into useful business information.',
+      },
+      {
+        title: 'Productivity and Educational Technology',
+        description: 'Tools and learning resources that help people build skills and work more effectively.',
+      },
+    ],
+    closingLine: 'The focus is not just on introducing a tool — it is on helping people understand how to use it.',
+  },
+
+  audienceInsights: {
+    eyebrow: 'Who the channel reaches',
+    headline: 'An audience focused on learning and professional growth.',
+    intro: 'The media kit\'s audience snapshot provides context for brands considering products that serve learners, professionals and people building technical skills. Demographic figures below are reported for the last 28 days in the media kit.',
+    geography: [
+      { region: 'India', percentage: '72.3%' },
+      { region: 'Pakistan', percentage: '3.6%' },
+      { region: 'United States', percentage: '2.6%' },
+      { region: 'Bangladesh', percentage: '2.0%' },
+      { region: 'United Arab Emirates', percentage: '1.4%' },
+    ],
+    ageDistribution: [
+      { range: '25–34', percentage: '38.4%' },
+      { range: '18–24', percentage: '26.6%' },
+      { range: '35–44', percentage: '20.4%' },
+      { range: '45–54', percentage: '8.4%' },
+      { range: '55–64', percentage: '3.6%' },
+      { range: '65+', percentage: '2.1%' },
+      { range: '13–17', percentage: '0.7%' },
+    ],
+    genderDistribution: [
+      { gender: 'Men', percentage: '72.7%' },
+      { gender: 'Women', percentage: '27.3%' },
+    ],
+    additionalInterests: 'The media kit\'s interest panels include business technology, business services, web hosting and web services among the listed shopping-interest categories. These categories are estimated interest signals, not verified purchase intent.',
+    closingLine: 'Audience data helps provide context. The best campaign fit still depends on the product, the brief and what viewers need.',
+  },
+
+  brandFit: {
+    eyebrow: 'Where a collaboration could make sense',
+    headline: 'Put useful products in the context where they belong.',
+    intro: 'Pavan Lalwani Academy\'s educational focus may suit products that benefit from explanation, demonstration or a practical walkthrough.',
+    categories: [
+      {
+        title: 'AI tools and software',
+        description: 'Products that learners and professionals can understand through a clear, useful demonstration.',
+      },
+      {
+        title: 'Data analytics and business intelligence',
+        description: 'Tools for analysing data, building dashboards and communicating business information.',
+      },
+      {
+        title: 'Excel and productivity tools',
+        description: 'Products that solve practical problems in common work or learning workflows.',
+      },
+      {
+        title: 'Educational technology',
+        description: 'Platforms and services that help people develop technical skills.',
+      },
+    ],
+    closingLine: 'A strong fit starts with a real use case — not simply a mention of the product.',
+  },
+
+  collaborationFormats: {
+    eyebrow: 'YouTube collaboration options',
+    headline: 'Choose the format that suits the campaign.',
+    intro: 'The creator team provided the following quoted rates for organic YouTube publication.',
+    formats: [
+      {
+        name: 'Integrated YouTube Video',
+        description: 'A 1–3 minute sponsored segment within a regular educational video.',
+        rate: '$1,000',
+        details: 'Integrated segment placed contextually within a relevant tutorial or workflow. Includes research, scripting, recording, editing and publishing. Brand review before recording available.',
+      },
+      {
+        name: 'Dedicated YouTube Video',
+        description: 'A full 6–15 minute video focused on the product with a practical walkthrough or tutorial.',
+        rate: '$1,500',
+        details: 'Full dedicated video with research, scripting, recording, editing and publishing. Brand review before recording available.',
+      },
+    ],
+    publicationNote: 'These rates cover organic publication. Additional deliverables, paid usage rights and whitelisting can be discussed separately and may incur additional charges. Affiliate links, coupon codes and pinned comments can also be considered where relevant to the collaboration. The final scope and commercial terms are agreed with the team for each campaign before work begins.',
+  },
+
+  collaborationProcess: {
+    eyebrow: 'How collaborations work',
+    headline: 'From brief to published content — a clear process.',
+    intro: 'The team evaluates relevant opportunities campaign by campaign. Do not imply exclusivity, guaranteed availability or a standing representation agreement with Reachzy.',
+    steps: [
+      {
+        number: '01',
+        title: 'Brief Submission',
+        body: 'Share the product, the goal, the target audience, the ideal launch window and the budget range. A useful brief gives everyone a clearer starting point and helps set realistic expectations for the finished content.',
+      },
+      {
+        number: '02',
+        title: 'Fit Assessment',
+        body: 'The team reviews whether the product aligns with the channel\'s topics and audience needs. If it is not a good fit, the team will say so early.',
+      },
+      {
+        number: '03',
+        title: 'Content Planning',
+        body: 'The team reviews the brief and confirms feasibility and expected timing based on research needs, production complexity and the existing content schedule.',
+      },
+      {
+        number: '04',
+        title: 'Script Development',
+        body: 'The creator\'s team develops the script to keep the content educational, practical and aligned with the audience.',
+      },
+      {
+        number: '05',
+        title: 'Review Before Recording',
+        body: 'The team can share the script for brand review before recording.',
+      },
+      {
+        number: '06',
+        title: 'Final Scope and Terms',
+        body: 'Deliverables, commercial terms, usage rights, whitelisting and any category or competitor restrictions are discussed and agreed before proceeding.',
+      },
+    ],
+    closingLine: 'A useful brief gives everyone a clearer starting point and helps set realistic expectations for the finished content.',
+  },
+
+  sponsoredExperience: {
+    eyebrow: 'Commercial experience',
+    headline: 'Relevant integrations built around practical use cases.',
+    body: 'The creator team reports previous sponsored content and product integrations involving AI, analytics and productivity tools. The supplied media kit also includes examples of branded-content videos.',
+    campaigns: [
+      {
+        brand: 'Previous AI/Analytics Sponsors',
+        period: 'Various (2024–2026)',
+        type: 'Dedicated Video / Integrated Segment',
+        metrics: [
+          { label: 'Views', value: 'Verified per campaign', highlight: false },
+          { label: 'Engagement', value: 'Available on request', highlight: false },
+        ],
+        detail: 'Campaign specifics and performance data available for qualified brand opportunities.',
+        note: 'Only name individual sponsors or publish campaign results when the details have been verified and approved for public use.',
+      },
+    ] as CampaignEvidenceItem[],
+    closingLine: 'The most useful campaign evidence connects the product, the content delivered and the outcome the brand wanted to achieve.',
+    publicationNote: 'Only name individual sponsors or publish campaign results when the details have been verified and approved for public use.',
+  },
+
+  creatorRoll: {
+    eyebrow: 'Explore more creators',
+    headline: 'Looking for a different audience?',
+    supportingCopy: 'Explore more creators across technology, AI, productivity, software and related categories to find a relevant fit for your campaign.',
+  },
+
+  finalCta: {
+    eyebrow: 'Have a campaign in mind?',
+    headline: 'Liked this creator? Let\'s talk about your campaign.',
+    supportingCopy: 'Considering a product or service that could be useful to Pavan Lalwani Academy\'s audience?\n\nShare a few details about your company, what you would like to promote, your ideal launch window and the outcome that would make the campaign successful. Include your budget range so the team can assess the opportunity with the right context.',
+    cta: {
+      label: 'Let\'s talk about this creator →',
+      href: 'mailto:partnerships@reachzy.space',
+    },
+    fallbackContact: 'partnerships@reachzy.space',
+  },
+
+  metadata: {
+    title: 'Pavan Lalwani — Reachzy',
+    description: 'Pavan Lalwani Academy: 339.9K subscribers, 1.1M views (28 days), 949 videos. Audience insights, channel reach, collaboration formats, pricing, and sponsorship process.',
+    canonical: '/creators/pavan-lalwani',
+    openGraph: {
+      title: 'Pavan Lalwani — Reachzy',
+      description: 'Practical tutorials on AI, data analytics, Excel, Power BI and productivity. 339.9K subscribers, 1.1M monthly views. Campaign evidence, collaboration formats and process.',
+      images: [{ url: '/creators/pavan-lalwani-profile.jpg', width: 1200, height: 1500 }],
+    },
+    publicationNotes: [
+      'Use "Pavan Lalwani" as the working spelling because this is the spelling used by the supplied email and media kit. Confirm the preferred public-facing name with the team if needed.',
+      'The media kit was generated October 8, 2026. Verify that the channel metrics remain current before publication.',
+      'Confirm official URLs for YouTube, Instagram, X/Twitter and LinkedIn before linking their icons. The supplied kit identifies these platforms but does not provide all exact destination URLs in the available text.',
+      'The quoted YouTube rates were supplied by the creator team. Confirm approval to publish pricing publicly before launch.',
+      'Do not invent rates for unquoted formats or imply usage rights, whitelisting or additional deliverables are included in the organic-publication rates.',
+      'Do not invent campaign outcomes, conversion data, ROI or named sponsorships. Verify and obtain approval before publishing individual branded-content examples.',
+      'The team evaluates relevant opportunities campaign by campaign. Do not imply exclusivity, guaranteed availability or a standing representation agreement with Reachzy.',
+    ],
+  },
+};
+
+export type PavanLalwaniContent = typeof pavanLalwaniContent;

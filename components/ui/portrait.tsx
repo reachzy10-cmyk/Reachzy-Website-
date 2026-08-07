@@ -11,6 +11,7 @@ export interface PortraitProps {
   priority?: boolean;
   className?: string;
   fill?: boolean;
+  aspectRatio?: string;
 }
 
 export function Portrait({
@@ -21,16 +22,14 @@ export function Portrait({
   priority = false,
   className,
   fill = false,
+  aspectRatio,
 }: PortraitProps) {
-  const aspectRatio = width / height;
+  const ratio = aspectRatio || `${width}/${height}`;
 
   return (
     <div
-      className={clsx(
-        'relative overflow-hidden rounded-xl',
-        fill ? 'w-full aspect-[4/5]' : `w-full aspect-[${aspectRatio}]`,
-        className
-      )}
+      className={clsx('relative w-full overflow-hidden rounded-2xl bg-secondary', className)}
+      style={{ aspectRatio: ratio }}
     >
       <Image
         src={src}
@@ -39,15 +38,8 @@ export function Portrait({
         width={fill ? undefined : width}
         height={fill ? undefined : height}
         priority={priority}
-        sizes={fill ? '(max-width: 768px) 100vw, 40vw' : undefined}
-        className={clsx(
-          'object-cover transition-transform duration-500 ease-out',
-          fill ? 'hover:scale-[1.015]' : ''
-        )}
-      />
-      <div
-        className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent pointer-events-none"
-        aria-hidden="true"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 42vw, 520px"
+        className="h-full w-full object-cover"
       />
     </div>
   );

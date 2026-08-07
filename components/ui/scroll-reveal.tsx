@@ -22,7 +22,7 @@ export function ScrollReveal({
   once = true,
   direction = 'up',
 }: ScrollRevealProps) {
-  const ref = useRef<HTMLElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
