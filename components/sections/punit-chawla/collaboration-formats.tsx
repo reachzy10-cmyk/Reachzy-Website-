@@ -3,7 +3,7 @@
 import { punitChawlaContent } from '@/lib/content/punit-chawla';
 import { Card } from '@/components/ui/card';
 import { ScrollReveal, StaggeredReveal } from '@/components/ui/scroll-reveal';
-import { Video, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Video, Camera as Instagram, Briefcase as Linkedin, Play as Youtube } from 'lucide-react';
 
 const platformIcons: Record<string, typeof Video> = { YouTube: Youtube, Instagram, LinkedIn: Linkedin };
 
