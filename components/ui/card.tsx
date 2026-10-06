@@ -19,7 +19,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
     };
 
     const hoverStyles = hoverable
-      ? 'transition-all duration-300 hover:border-primary/50 hover:shadow-[0_8px_32px_rgba(0,0,0,0.3)] hover:-translate-y-[2px]'
+      ? 'transition-all duration-300 hover:border-primary/40 hover:shadow-[0_6px_24px_rgba(0,0,0,0.25)] hover:-translate-y-[1px]'
       : 'transition-colors duration-200';
 
     return (

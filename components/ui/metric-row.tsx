@@ -17,7 +17,7 @@ export function Metric({ value, label, icon, className }: MetricProps) {
       <div className="font-mono text-3xl md:text-4xl font-medium text-foreground">
         {value}
       </div>
-      <div className="text-sm text-muted-foreground uppercase tracking-wide font-medium">
+      <div className="text-sm uppercase tracking-wide font-medium text-muted">
         {label}
       </div>
     </div>
