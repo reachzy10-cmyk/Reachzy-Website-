@@ -20,25 +20,28 @@ const newsreader = Newsreader({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://reachzy.space'),
   title: 'Reachzy — Influencer Marketing Agency',
   description:
     'Reachzy is an influencer marketing agency. We connect brands with relevant creators and run campaigns from brief to delivery.',
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
+        url: '/favicon.ico',
+        type: 'image/x-icon',
       },
       {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
+        url: '/reachzy-icon-32.png',
+        type: 'image/png',
+        sizes: '32x32',
       },
       {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/reachzy-icon-512.png',
+        type: 'image/png',
+        sizes: '512x512',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/reachzy-icon-180.png',
   },
   openGraph: {
     title: 'Reachzy — Influencer Marketing Agency',
