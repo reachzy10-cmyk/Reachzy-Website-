@@ -55,58 +55,58 @@ export function CreatorExample() {
     <section className="border-b border-border">
       <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-32">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-8 items-start">
-          {/* Left: Portrait + Key Metrics */}
-          <ScrollReveal delay={100} direction="up">
-            <div className="lg:col-span-5">
-              <Portrait
-                src="/creators/ai-learners-india-profile.jpg"
-                alt="AI Learners India channel profile — Abhijeet Kalamkar, founder"
-                width={480}
-                height={600}
-                priority
-                fill
-              />
-              <div className="mt-6 space-y-3 text-center md:text-left">
-                <p className="text-sm font-medium uppercase tracking-[0.12em] text-primary">
-                  {creatorExample.eyebrow}
-                </p>
-                <h3 className="font-serif text-2xl md:text-3xl font-medium text-foreground">
-                  {creatorExample.headline}
-                </h3>
-                <p className="text-sm text-[var(--accent-coral)] font-medium">
-                  {creatorExample.creatorName}
-                </p>
-                <p className="text-sm text-muted-foreground">
-                  {creatorExample.categoryLine}
-                </p>
+          {/* Left: Portrait + Key Metrics - 6 columns */}
+          <ScrollReveal delay={100} direction="up" className="lg:col-span-6">
+            <Portrait
+              src="/creators/ai-learners-india-profile.jpg"
+              alt="AI Learners India channel profile — Abhijeet Kalamkar, founder"
+              width={900}
+              height={900}
+              priority
+              fill
+              aspectRatio="1/1"
+            />
+            <div className="mt-6 space-y-3 text-center md:text-left">
+              <p className="text-sm font-medium uppercase tracking-[0.12em] text-primary">
+                {creatorExample.eyebrow}
+              </p>
+              <h3 className="font-serif text-2xl md:text-3xl font-medium text-foreground">
+                {creatorExample.headline}
+              </h3>
+              <p className="text-sm text-[var(--accent-coral)] font-medium">
+                {creatorExample.creatorName}
+              </p>
+              <p className="text-sm text-muted-foreground">
+                {creatorExample.categoryLine}
+              </p>
 
-                <MetricRow metrics={metrics} className="mt-6 justify-center md:justify-start" />
+              {/* Changed MetricRow to use 3 columns on desktop to prevent overlap */}
+              <MetricRow metrics={metrics} className="mt-6 justify-center md:justify-start grid-cols-2 md:grid-cols-3" />
 
-                <div className="mt-6 flex flex-wrap items-center gap-3">
-                  {creatorExample.externalLinks.map((link) => {
-                    const Icon = iconMap[link.icon as keyof typeof iconMap];
-                    return (
-                      <Link
-                        key={link.label}
-                        href={link.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-                        aria-label={link.label}
-                      >
-                        <Icon className="size-4" aria-hidden="true" />
-                        {link.label}
-                      </Link>
-                    );
-                  })}
-                </div>
+              <div className="mt-6 flex flex-wrap items-center gap-3">
+                {creatorExample.externalLinks.map((link) => {
+                  const Icon = iconMap[link.icon as keyof typeof iconMap];
+                  return (
+                    <Link
+                      key={link.label}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={link.label}
+                    >
+                      <Icon className="size-4" aria-hidden="true" />
+                      {link.label}
+                    </Link>
+                  );
+                })}
               </div>
             </div>
           </ScrollReveal>
 
-          {/* Right: Description + Closing */}
-          <ScrollReveal delay={200} direction="up">
-            <div className="lg:col-span-7 space-y-6">
+          {/* Right: Description + Closing - 6 columns */}
+          <ScrollReveal delay={200} direction="up" className="lg:col-span-6">
+            <div className="space-y-6">
               <div className="prose prose-invert max-w-none">
                 <p className="text-pretty leading-relaxed text-muted-foreground text-lg">
                   {creatorExample.body}

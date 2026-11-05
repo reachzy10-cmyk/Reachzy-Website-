@@ -1,62 +1,18 @@
 'use client';
 
-import { Card } from '@/components/ui/card';
 import { forCreatorsContent } from '@/lib/content/for-creators';
-import { clsx } from 'clsx';
-import { Laptop, LayoutDashboard, Code, Bot } from 'lucide-react';
 import { ScrollReveal, StaggeredReveal } from '@/components/ui/scroll-reveal';
+import { Bot, Code2, Cpu, Workflow } from 'lucide-react';
 
+const icons = [Cpu, Workflow, Code2, Bot];
 export function TechnologyCategories() {
-  const { technologyCategories } = forCreatorsContent;
-
-  const icons = {
-    Tech: Laptop,
-    Productivity: LayoutDashboard,
-    'Software & SaaS': Code,
-    AI: Bot,
-  } as const;
-
+  const { categories } = forCreatorsContent;
   return (
     <section className="border-b border-border">
-      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-32">
-        <ScrollReveal delay={100} direction="up" className="max-w-3xl mb-12 lg:mb-16">
-          <p className="text-sm font-medium uppercase tracking-[0.16em] text-[var(--accent-coral)]">
-            {technologyCategories.eyebrow}
-          </p>
-          <h2 className="mt-4 text-balance font-serif text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight text-foreground">
-            {technologyCategories.headline}
-          </h2>
-          <p className="mt-5 text-pretty leading-relaxed text-muted-foreground lg:text-base">
-            {technologyCategories.intro}
-          </p>
-        </ScrollReveal>
-
-        <ScrollReveal delay={200} direction="up">
-          <StaggeredReveal staggerDelay={150} direction="up" className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {technologyCategories.categories.map((category, index) => {
-              const Icon = icons[category.name as keyof typeof icons];
-              return (
-                <Card key={index} variant="default" hoverable className="p-6">
-                  <div className="inline-flex items-center justify-center size-12 rounded-lg bg-primary/10 text-primary mb-4">
-                    <Icon className="size-5" aria-hidden="true" />
-                  </div>
-                  <h3 className="font-serif text-lg font-medium text-foreground mb-2">
-                    {category.name}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {category.description}
-                  </p>
-                </Card>
-              );
-            })}
-          </StaggeredReveal>
-        </ScrollReveal>
-
-        <ScrollReveal delay={300} direction="up" className="mt-12 max-w-3xl mx-auto text-center">
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            {technologyCategories.closingParagraph}
-          </p>
-        </ScrollReveal>
+      <div className="mx-auto w-full max-w-7xl px-6 py-14 md:px-8 md:py-16 lg:py-20">
+        <ScrollReveal delay={80} direction="up" className="max-w-3xl"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent-coral)]">{categories.eyebrow}</p><h2 className="mt-4 font-serif text-3xl leading-tight text-foreground md:text-4xl">{categories.headline}</h2><p className="mt-4 leading-relaxed text-muted-foreground">{categories.intro}</p></ScrollReveal>
+        <StaggeredReveal staggerDelay={80} direction="up" className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">{categories.items.map((category, index) => { const Icon = icons[index]; return <article key={category.name} className="rounded-xl border border-border bg-card p-5"><Icon className="size-5 text-[var(--accent-coral)]"/><h3 className="mt-4 font-serif text-lg text-foreground">{category.name}</h3><p className="mt-2 text-sm leading-relaxed text-muted-foreground">{category.description}</p></article>; })}</StaggeredReveal>
+        <p className="mt-5 max-w-4xl text-xs leading-relaxed text-muted-foreground">The categories can overlap. We consider the full context of a creator’s content rather than placing a channel into a single box.</p>
       </div>
     </section>
   );

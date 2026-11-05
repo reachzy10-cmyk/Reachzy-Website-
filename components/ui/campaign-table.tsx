@@ -25,7 +25,9 @@ export interface CampaignTableProps {
 
 export function CampaignTable({ campaigns, className, showType = true }: CampaignTableProps) {
   return (
-    <div className={clsx('overflow-x-auto', className)}>
+    <div className={className}>
+      <CampaignCards campaigns={campaigns} className="md:hidden" />
+      <div className="hidden overflow-x-auto md:block">
       <table className="w-full text-left border-collapse">
         <thead>
           <tr className="border-b border-border">
@@ -89,11 +91,8 @@ export function CampaignTable({ campaigns, className, showType = true }: Campaig
           ))}
         </tbody>
       </table>
-      {campaigns[0]?.note && (
-        <p className="mt-4 text-sm text-muted-foreground border-t border-border pt-4">
-          {campaigns[0].note}
-        </p>
-      )}
+      </div>
+      {campaigns[0]?.note && <p className="mt-4 border-t border-border pt-4 text-sm text-muted-foreground">{campaigns[0].note}</p>}
     </div>
   );
 }
@@ -101,16 +100,16 @@ export function CampaignTable({ campaigns, className, showType = true }: Campaig
 /* Mobile card view */
 export function CampaignCards({ campaigns, className }: { campaigns: CampaignEvidenceItem[]; className?: string }) {
   return (
-    <div className={clsx('space-y-4 md:hidden', className)}>
+    <div className={clsx('space-y-3', className)}>
       {campaigns.map((campaign, index) => (
-        <div key={index} className="bg-card border border-border rounded-xl p-6">
-          <div className="flex items-start justify-between gap-4 mb-3">
+        <div key={index} className="rounded-xl border border-border bg-card p-4">
+          <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <p className="font-medium text-foreground">{campaign.brand}</p>
               <p className="text-sm text-muted-foreground">{campaign.period}</p>
             </div>
             {campaign.type && (
-              <span className="text-sm text-muted-foreground whitespace-nowrap">
+              <span className="text-xs text-muted-foreground sm:whitespace-nowrap">
                 {campaign.type}
               </span>
             )}
@@ -134,15 +133,10 @@ export function CampaignCards({ campaigns, className }: { campaigns: CampaignEvi
             ))}
           </div>
           {campaign.detail && (
-            <p className="text-sm text-muted-foreground mb-3">{campaign.detail}</p>
+            <p className="text-sm leading-relaxed text-muted-foreground">{campaign.detail}</p>
           )}
         </div>
       ))}
-      {campaigns[0]?.note && (
-        <p className="text-sm text-muted-foreground border-t border-border pt-4">
-          {campaigns[0].note}
-        </p>
-      )}
     </div>
   );
 }

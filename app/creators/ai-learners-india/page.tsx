@@ -7,7 +7,8 @@ import { ContentPerformance } from '@/components/sections/ai-learners-india/cont
 import { CampaignEvidence } from '@/components/sections/ai-learners-india/campaign-evidence';
 import { CollaborationProcess } from '@/components/sections/ai-learners-india/collaboration-process';
 import { CreatorFaq } from '@/components/sections/ai-learners-india/creator-faq';
-import { FinalCta } from '@/components/sections/final-cta';
+import { CreatorRoll } from '@/components/sections/ai-learners-india/creator-roll';
+import { FinalCta } from '@/components/sections/ai-learners-india/final-cta';
 
 export const metadata: Metadata = {
   title: 'AI Learners India — Reachzy',
@@ -36,6 +37,7 @@ export default function AiLearnersIndiaPage() {
         <CampaignEvidence />
         <CollaborationProcess />
         <CreatorFaq />
+        <CreatorRoll />
         <FinalCta />
       </main>
       <SiteFooter />

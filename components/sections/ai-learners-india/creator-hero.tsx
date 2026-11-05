@@ -54,33 +54,32 @@ export function CreatorHero() {
 
   return (
     <section className="border-b border-border">
-      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-32">
+      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-24">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-8 items-start">
-          {/* Left: Portrait */}
-          <ScrollReveal delay={100} direction="up">
-            <div className="lg:col-span-5">
-              <Portrait
-                src={hero.portrait}
-                alt={hero.portraitAlt}
-                width={480}
-                height={600}
-                priority
-                fill
-              />
-            </div>
+          {/* Left: Portrait - 6 columns (equal split for better proportions) */}
+          <ScrollReveal delay={100} direction="up" className="lg:col-span-5 lg:max-w-[460px]">
+            <Portrait
+              src={hero.portrait}
+              alt={hero.portraitAlt}
+              width={900}
+              height={900}
+              priority
+              fill
+              aspectRatio="1/1"
+            />
           </ScrollReveal>
 
-          {/* Right: Details */}
-          <ScrollReveal delay={200} direction="up">
-            <StaggeredReveal staggerDelay={120} direction="up" className="lg:col-span-7 space-y-8">
+          {/* Right: Details - 6 columns (equal split) */}
+          <ScrollReveal delay={200} direction="up" className="lg:col-span-7 min-w-0">
+            <StaggeredReveal staggerDelay={120} direction="up" className="space-y-8">
               <div>
-                <p className="text-sm font-medium uppercase tracking-[0.16em] text-primary">
-                  {hero.eyebrow}
-                </p>
-                <p className="mt-2 text-sm text-primary font-medium">{hero.tagline}</p>
+                <p className="text-sm font-medium uppercase tracking-[0.16em] text-primary">{hero.eyebrow}</p>
+                <h1 className="mt-2 font-serif text-4xl leading-tight tracking-tight text-foreground md:text-5xl lg:text-6xl">{hero.headline}</h1>
+                <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground">{hero.tagline}</p>
               </div>
 
-              <MetricRow metrics={metrics} />
+              {/* 3 columns on desktop to prevent overlap */}
+              <MetricRow metrics={metrics} gridCols="grid-cols-2 sm:grid-cols-3" />
 
               {/* External Links */}
               <div className="flex flex-wrap gap-4 pt-4 border-t border-border">

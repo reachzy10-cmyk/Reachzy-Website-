@@ -1,48 +1,18 @@
 'use client';
 
 import { forBrandsContent } from '@/lib/content/for-brands';
-import { Card } from '@/components/ui/card';
-import { clsx } from 'clsx';
-import { Check } from 'lucide-react';
 import { ScrollReveal, StaggeredReveal } from '@/components/ui/scroll-reveal';
+import { Check } from 'lucide-react';
 
 export function FitPhilosophy() {
   const { fitPhilosophy } = forBrandsContent;
-
   return (
-    <section className="border-b border-border">
-      <div className="mx-auto w-full max-w-7xl px-6 py-16 md:px-8 md:py-24 lg:py-32">
-        <ScrollReveal delay={100} direction="up" className="max-w-3xl mb-12 lg:mb-16">
-          <p className="text-sm font-medium uppercase tracking-[0.16em] text-primary">
-            {fitPhilosophy.eyebrow}
-          </p>
-          <h2 className="mt-4 text-balance font-serif text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight text-foreground">
-            {fitPhilosophy.headline}
-          </h2>
-          <p className="mt-5 text-pretty leading-relaxed text-muted-foreground lg:text-base">
-            {fitPhilosophy.body}
-          </p>
-        </ScrollReveal>
-
-        <ScrollReveal delay={200} direction="up">
-          <StaggeredReveal staggerDelay={150} direction="up" className="grid gap-6 md:grid-cols-4">
-            {fitPhilosophy.criteria.map((criterion, index) => (
-              <Card
-                key={index}
-                variant="default"
-                hoverable
-                className="p-6 flex flex-col"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="inline-flex items-center justify-center size-10 rounded-lg bg-primary/10 text-primary">
-                    <Check className="size-5" />
-                  </div>
-                </div>
-                <p className="text-pretty text-muted-foreground">{criterion}</p>
-              </Card>
-            ))}
-          </StaggeredReveal>
-        </ScrollReveal>
+    <section id="creator-fit" className="border-b border-border bg-card/20">
+      <div className="mx-auto w-full max-w-7xl px-6 py-14 md:px-8 md:py-16 lg:py-20">
+        <ScrollReveal delay={80} direction="up" className="max-w-3xl"><p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">{fitPhilosophy.eyebrow}</p><h2 className="mt-4 font-serif text-3xl leading-tight text-foreground md:text-4xl">{fitPhilosophy.headline}</h2><p className="mt-4 text-pretty leading-relaxed text-muted-foreground">{fitPhilosophy.body}</p></ScrollReveal>
+        <StaggeredReveal staggerDelay={80} direction="up" className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {fitPhilosophy.criteria.map((criterion, index) => <article key={criterion} className="rounded-xl border border-border bg-background p-5"><div className="flex items-center justify-between"><Check className="size-5 text-primary"/><span className="font-mono text-xs text-muted-foreground">0{index + 1}</span></div><p className="mt-5 text-sm leading-relaxed text-foreground">{criterion}</p></article>)}
+        </StaggeredReveal>
       </div>
     </section>
   );
