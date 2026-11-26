@@ -1,0 +1,64 @@
+▲ Next.js 16.4.0 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://10.44.58.242:3000
+✓ Ready in 3.0s
+✓ Running next.config.mjs took 116ms
+  Skipping creating a lockfile at /data/data/com.termux/files/home/website_finalisation/.next/dev/lock because we're using WASM bindings
+
+○ Compiling /creators/pavan-lalwani/page ...
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /creators/pavan-lalwani 200 in 3.3s (next.js: 1510ms, application-code: 1805ms)
+ GET /creators/pavan-lalwani 200 in 758ms (next.js: 14ms, application-code: 744ms)
+ GET /creators/pavan-lalwani 200 in 599ms (next.js: 6ms, application-code: 594ms)
+ GET /creators/pavan-lalwani 200 in 496ms (next.js: 6ms, application-code: 490ms)
+ GET /creators/pavan-lalwani 200 in 492ms (next.js: 7ms, application-code: 486ms)
+ GET /creators/pavan-lalwani 200 in 484ms (next.js: 5ms, application-code: 479ms)
+⨯ ./components/sections/creator-proof.tsx
+Module not found: Can't resolve '@/lib/content/home'
+
+https://nextjs.org/docs/messages/module-not-found
+○ Compiling /page ...
+ GET / 500 in 7.1s
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/data'
+Watchpack Error (watcher): Error: EACCES: permission denied, watch '/'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/data'
+Watchpack Error (initial scan): Error: EACCES: permission denied, scandir '/'
+⨯ ./components/sections/creator-proof.tsx
+Module not found: Can't resolve '@/lib/content/home'
+
+https://nextjs.org/docs/messages/module-not-found
+⨯ ./components/sections/creator-proof.tsx
+Module not found: Can't resolve '@/lib/content/home'
+
+https://nextjs.org/docs/messages/module-not-found
+⨯ ./components/sections/creator-proof.tsx
+Module not found: Can't resolve '@/lib/content/home'
+
+https://nextjs.org/docs/messages/module-not-found
+⨯ ./components/sections/creator-proof.tsx
+Module not found: Can't resolve '@/lib/content/home'
+
+https://nextjs.org/docs/messages/module-not-found
+ GET /for-creators 500 in 168ms (next.js: 37ms, application-code: 131ms)
+ GET /creators/pavan-lalwani 500 in 76ms (next.js: 12ms, application-code: 63ms)
+ GET /creators/pavan-lalwani 500 in 75ms (next.js: 12ms, application-code: 63ms)
+ GET /creators/pavan-lalwani 500 in 56ms (next.js: 9ms, application-code: 46ms)
+ GET /creators/pavan-lalwani 500 in 58ms (next.js: 11ms, application-code: 47ms)
+ GET /creators/pavan-lalwani 500 in 62ms (next.js: 9ms, application-code: 53ms)
+ GET /creators/pavan-lalwani 500 in 66ms (next.js: 10ms, application-code: 56ms)
+ GET /creators/pavan-lalwani 500 in 60ms (next.js: 12ms, application-code: 48ms)
+[?25h

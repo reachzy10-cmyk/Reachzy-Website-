@@ -6,6 +6,7 @@ import { Philosophy } from '@/components/sections/philosophy';
 import { WhatWeDo } from '@/components/sections/what-we-do';
 import { HomepageApproach } from '@/components/sections/homepage-approach';
 import { DualPath } from '@/components/sections/dual-path';
+import { CreatorRoll } from '@/components/sections/creator-roll';
 import { FinalCta } from '@/components/sections/final-cta';
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function Page() {
         <WhatWeDo />
         <HomepageApproach />
         <DualPath />
+        <CreatorRoll />
         <FinalCta />
       </main>
       <SiteFooter />

@@ -1,0 +1,40 @@
+▲ Next.js 16.4.0 (webpack)
+- Local:         http://localhost:3000
+- Network:       http://10.44.58.242:3000
+✓ Ready in 3.0s
+✓ Running next.config.mjs took 121ms
+  Skipping creating a lockfile at /data/data/com.termux/files/home/website_finalisation/.next/dev/lock because we're using WASM bindings
+
+○ Compiling /creators/pavan-lalwani/page ...
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+ GET /creators/pavan-lalwani 200 in 3.1s (next.js: 1265ms, application-code: 1796ms)
+ GET /creators/pavan-lalwani 200 in 707ms (next.js: 11ms, application-code: 695ms)
+ GET /creators/pavan-lalwani 200 in 588ms (next.js: 6ms, application-code: 582ms)
+ GET /creators/pavan-lalwani 200 in 495ms (next.js: 6ms, application-code: 489ms)
+○ Compiling /page ...
+ GET / 200 in 2.9s (next.js: 506ms, application-code: 2.4s)
+ GET / 200 in 572ms (next.js: 14ms, application-code: 559ms)
+○ Compiling /for-creators/page ...
+ GET /for-creators 200 in 1867ms (next.js: 450ms, application-code: 1417ms)
+ GET / 200 in 856ms (next.js: 70ms, application-code: 786ms)
+ GET / 200 in 1117ms (next.js: 47ms, application-code: 1070ms)
+ GET /for-creators 200 in 764ms (next.js: 13ms, application-code: 751ms)
+ GET /for-creators 200 in 821ms (next.js: 22ms, application-code: 799ms)
+ GET / 200 in 2.9s (next.js: 1078ms, application-code: 1858ms)
+ GET / 200 in 575ms (next.js: 8ms, application-code: 566ms)
+ GET / 200 in 591ms (next.js: 8ms, application-code: 583ms)
+ GET / 200 in 454ms (next.js: 6ms, application-code: 448ms)
+ GET /for-creators 200 in 1546ms (next.js: 398ms, application-code: 1148ms)
+ GET /for-creators 200 in 600ms (next.js: 6ms, application-code: 594ms)
+ GET / 200 in 580ms (next.js: 26ms, application-code: 554ms)
+ GET / 200 in 443ms (next.js: 7ms, application-code: 436ms)
+ GET / 200 in 1005ms (next.js: 7ms, application-code: 998ms)
+ GET / 200 in 807ms (next.js: 21ms, application-code: 786ms)
+ GET / 200 in 806ms (next.js: 13ms, application-code: 793ms)
+ GET /for-creators 200 in 950ms (next.js: 9ms, application-code: 941ms)
+ GET / 200 in 845ms (next.js: 32ms, application-code: 813ms)
+ GET / 200 in 473ms (next.js: 5ms, application-code: 468ms)
+ GET / 200 in 467ms (next.js: 6ms, application-code: 461ms)
+ GET /for-creators 200 in 622ms (next.js: 8ms, application-code: 614ms)
+ GET / 200 in 560ms (next.js: 6ms, application-code: 554ms)
+ GET /for-creators 200 in 564ms (next.js: 4ms, application-code: 560ms)

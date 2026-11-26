@@ -1,0 +1,32 @@
+▲ Next.js 16.4.0 (webpack)
+✓ Running next.config.mjs took 129ms
+  Skipping creating a lockfile at /data/data/com.termux/files/home/website_finalisation/.next/lock because we're using WASM bindings
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 33.8s
+  Skipping validation of types
+  Finished TypeScript config validation in 77ms ...
+  Collecting page data using 1 worker ...
+  Generating static pages using 1 worker (0/10) ...
+⚠ metadataBase property in metadata export is not set for resolving social open graph or twitter images, using "http://localhost:3000". See https://nextjs.org/docs/app/api-reference/functions/generate-metadata#metadatabase
+  Generating static pages using 1 worker (2/10) 
+  Generating static pages using 1 worker (4/10) 
+  Generating static pages using 1 worker (7/10) 
+✓ Generating static pages using 1 worker (10/10) in 10.5s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /creators/ai-learners-india
+├ ○ /creators/pavan-lalwani
+├ ○ /creators/punit-chawla
+├ ○ /creators/techvishal-vsb
+├ ○ /creators/vaibhav-sisinty
+├ ○ /for-brands
+└ ○ /for-creators
+
+
+○  (Static)  prerendered as static content
+

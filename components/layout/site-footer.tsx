@@ -7,6 +7,7 @@ const footerLinks = [
   { label: 'Home', href: '/' },
   { label: 'For Brands', href: '/for-brands' },
   { label: 'For Creators', href: '/for-creators' },
+  { label: 'Creators', href: '/#creators' },
 ];
 
 export function SiteFooter() {

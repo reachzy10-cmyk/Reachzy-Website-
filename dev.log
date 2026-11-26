@@ -1,0 +1,6 @@
+▲ Next.js 16.4.0 (webpack)
+- Local:         http://localhost:3001
+- Network:       http://0.0.0.0:3001
+✓ Ready in 3.4s
+✓ Running next.config.mjs took 135ms
+  Skipping creating a lockfile at /data/data/com.termux/files/home/website_finalisation/.next/dev/lock because we're using WASM bindings
