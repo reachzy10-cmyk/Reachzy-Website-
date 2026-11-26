@@ -2,10 +2,10 @@
 export const forBrandsContent = {
   hero: {
     eyebrow: 'For brands',
-    headline: 'Don’t start with the creator. Start with the product.',
+    headline: 'Don\'t start with the creator. Start with the product.',
     body: 'Before recommending a creator, we look at what your product does, who it is built for and how people discover solutions like yours. We research relevant creators, examine their recent content and sponsorship context, then shape a recommendation around the brief—not simply a list of names.',
-    primaryCta: { label: 'Discuss your campaign', href: 'mailto:partnerships@reachzy.space?subject=Campaign%20enquiry', variant: 'primary' },
-    secondaryCta: { label: 'Explore creators', href: '/#creator-roll', variant: 'ghost' },
+    primaryCta: { label: 'Discuss your campaign', href: 'mailto:partnerships@imprio.org?subject=Campaign%20enquiry', variant: 'primary' },
+    secondaryCta: { label: 'Explore for creators', href: '/for-creators', variant: 'ghost' },
   },
   problem: {
     eyebrow: 'The part that matters',
@@ -13,17 +13,17 @@ export const forBrandsContent = {
     body: [
       'A large audience does not automatically make a creator right for a software product.',
       'The useful questions come before outreach: what does the creator make, who watches it, why does that audience care, and would your product make sense in that content?',
-      'That is the work Reachzy puts behind creator discovery.',
+      'That is the work IMPRIO puts behind creator discovery.',
     ],
   },
   fitPhilosophy: {
     eyebrow: 'How we evaluate creator fit',
     headline: 'We look beyond subscriber counts.',
-    body: 'A useful recommendation considers the creator’s existing content, the audience context that can be verified, recent performance and whether the product can be explained naturally. No single metric makes the decision on its own.',
+    body: 'A useful recommendation considers the creator\'s existing content, the audience context that can be verified, recent performance and whether the product can be explained naturally. No single metric makes the decision on its own.',
     criteria: [
       'Product relevance — the creator already covers related topics or use cases.',
       'Audience context — language, geography and audience characteristics where reliable data is available.',
-      'Content performance — recent views, consistency and performance relative to the channel’s own history.',
+      'Content performance — recent views, consistency and performance relative to the channel\'s own history.',
       'Sponsorship suitability — previous integrations, content quality and fit with the brand.',
     ],
   },
@@ -62,9 +62,9 @@ export const forBrandsContent = {
     ],
   },
   finalCta: {
-    headline: 'Tell us what you’re looking to move.',
+    headline: 'Tell us what you\'re looking to move.',
     body: 'Share the product, audience and campaign objective. We can use that context to discuss relevant creator options and a possible scope.',
-    cta: { label: 'Start a campaign conversation', href: 'mailto:partnerships@reachzy.space?subject=Campaign%20enquiry', variant: 'primary' },
+    cta: { label: 'Start a campaign conversation', href: 'mailto:partnerships@imprio.org?subject=Campaign%20enquiry', variant: 'primary' },
     microcopy: 'A clear brief makes the first conversation more useful.',
   },
 };

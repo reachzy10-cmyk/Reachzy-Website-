@@ -21,21 +21,21 @@ const responsibilities = [
   },
 ]
 
-export function WhatReachzyDoes() {
+export function WhatImprioDoes() {
   return (
     <section className="border-b border-border">
       <div className="mx-auto w-full max-w-6xl px-6 py-20 md:px-8 md:py-28">
         <div className="grid gap-12 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-4">
             <p className="text-sm font-medium uppercase tracking-[0.16em] text-accent">
-              What Reachzy does
+              What IMPRIO does
             </p>
             <h2 className="mt-4 text-balance font-serif text-3xl leading-tight tracking-tight text-foreground md:text-4xl">
               We run the collaboration, not just the introduction.
             </h2>
             <p className="mt-5 text-pretty leading-relaxed text-muted-foreground">
               One point of contact from brief to report. No upfront fee —
-              Reachzy earns from the sponsorship work it brings and manages.
+              IMPRIO earns from the sponsorship work it brings and manages.
             </p>
           </div>
 

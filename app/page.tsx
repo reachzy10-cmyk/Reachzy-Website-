@@ -6,12 +6,11 @@ import { Philosophy } from '@/components/sections/philosophy';
 import { WhatWeDo } from '@/components/sections/what-we-do';
 import { HomepageApproach } from '@/components/sections/homepage-approach';
 import { DualPath } from '@/components/sections/dual-path';
-import { CreatorRoll } from '@/components/sections/creator-roll';
 import { FinalCta } from '@/components/sections/final-cta';
 
 export const metadata: Metadata = {
-  title: 'Reachzy — Influencer Marketing for Technology Brands',
-  description: 'Reachzy helps technology, software, SaaS and AI brands evaluate creator fit and coordinate relevant sponsorship campaigns.',
+  title: 'IMPRIO — Influencer Marketing Agency for Technology Brands',
+  description: 'IMPRIO connects technology, AI, SaaS, and software brands with relevant creators. We handle creator research, brand-creator matching, outreach, negotiations, briefing, deliverables, timelines, campaign coordination, usage rights and reporting.',
   alternates: { canonical: '/' },
 };
 
@@ -26,12 +25,6 @@ export default function Page() {
         <WhatWeDo />
         <HomepageApproach />
         <DualPath />
-        <CreatorRoll
-          heading="A few creators worth exploring."
-          description="A selected look at creators across technology, software, productivity and AI. Looking for a different audience or content style? Tell us what your campaign needs."
-          ctaHref="mailto:partnerships@reachzy.space?subject=Creator%20and%20campaign%20enquiry"
-          ctaLabel="Discuss your campaign"
-        />
         <FinalCta />
       </main>
       <SiteFooter />

@@ -5,25 +5,25 @@
 
 export const forCreatorsContent = {
   navigation: {
-    logo: 'Reachzy',
+    logo: 'IMPRIO',
     links: [
       { label: 'Home', href: '/' },
       { label: 'For Brands', href: '/for-brands' },
       { label: 'For Creators', href: '/for-creators' },
     ],
     cta: {
-      label: 'Talk to Reachzy',
-      href: 'mailto:partnerships@reachzy.space',
+      label: 'Talk to IMPRIO',
+      href: 'mailto:partnerships@imprio.org',
     },
   },
 
   hero: {
     eyebrow: 'For creators',
     headline: 'Brand deals should make sense before they reach your inbox.',
-    body: 'Reachzy works with technology-focused creators and brands to develop sponsorship opportunities around the content and audiences that make sense for them. We handle the commercial side of the opportunity. You decide what belongs on your channel.',
+    body: 'IMPRIO works with technology-focused creators and brands to develop sponsorship opportunities around the content and audiences that make sense for them. We handle the commercial side of the opportunity. You decide what belongs on your channel.',
     primaryCta: {
-      label: 'Talk to Reachzy',
-      href: 'mailto:partnerships@reachzy.space',
+      label: 'Talk to IMPRIO',
+      href: 'mailto:partnerships@imprio.org',
       variant: 'coral',
     },
   },
@@ -35,7 +35,7 @@ export const forCreatorsContent = {
     body: [
       'There is more to a sponsorship than putting a brand into a video.',
       'There are emails to answer. Terms to discuss. Deliverables to clarify. Timelines to coordinate. Contracts to move. Payments to follow up on.',
-      'Reachzy handles that commercial work around the opportunity, so you do not have to manage every part of the relationship yourself.',
+      'IMPRIO handles that commercial work around the opportunity, so you do not have to manage every part of the relationship yourself.',
       'You still decide what you take on.',
     ],
   },
@@ -44,7 +44,7 @@ export const forCreatorsContent = {
   whatWeActuallyHandle: {
     eyebrow: 'When you choose to explore an opportunity',
     headline: 'From the first conversation to the final follow-up.',
-    intro: 'Once you want to move forward, Reachzy can handle the commercial communication around the collaboration.',
+    intro: 'Once you want to move forward, IMPRIO can handle the commercial communication around the collaboration.',
     items: [
       {
         title: 'Brand communication',
@@ -71,7 +71,7 @@ export const forCreatorsContent = {
         body: 'We help keep timelines, deliverables and communication organized as the campaign moves forward.',
       },
     ],
-    whenNeeded: 'When needed: Content approval remains yours. Reachzy does not publish on your behalf.',
+    whenNeeded: 'When needed: Content approval remains yours. IMPRIO does not publish on your behalf.',
   },
 
   // SECTION 03 — OPPORTUNITY BRIEFING (What You See)
@@ -113,51 +113,54 @@ export const forCreatorsContent = {
   // SECTION 05 — THE FIT
   theFit: {
     eyebrow: 'Why an opportunity reaches you',
-    headline: 'We look for fit before we reach out.',
-    body: [
-      'Reachzy does not mass-pitch. We research the channel, the audience and the content before making a recommendation.',
-      'The fit criteria include:',
-    ],
-    criteria: [
-      'The product belongs in the creator\'s existing content world.',
-      'The audience already uses or buys tools like the one being promoted.',
-      'The creator has editorial control and a track record of maintaining audience trust.',
-      'The channel grows organically, not through paid promotion or giveaways.',
-    ],
-    closingLine: 'If the fit is not there, we do not reach out. That saves everyone time.',
-  },
-
-  // SECTION 06 — WHAT WE DON'T DO
-  whatWeDontDo: {
-    eyebrow: 'What we don\'t do',
-    headline: 'No guarantees. No mandates. No surprises.',
-    body: [
-      'We do not guarantee sponsorship volume, earnings or campaign outcomes.',
-      'We do not require exclusivity unless you choose it.',
-      'We do not publish on your behalf.',
-      'We do not pressure you to take opportunities that do not fit.',
-      'We do not take a percentage of your revenue without a clear, agreed arrangement.',
-    ],
-    closingLine: 'The relationship is straightforward: we bring opportunities, you decide.',
-  },
-
-  // SECTION 07 — CATEGORIES WE WORK WITH
-  categories: {
-    eyebrow: 'Creator categories we work with',
-    headline: 'Technology, productivity, software, AI and the people who build with them.',
-    intro: 'Reachzy works with creators whose content helps people understand, choose or use technology in their work.',
-    items: [
+    headline: 'We don\'t just match categories. We match context.',
+    intro: 'A sponsorship fits when the product, the creator and the audience align naturally.',
+    dimensions: [
       {
-        name: 'Technology',
-        description: 'Software, hardware, developer tools, infrastructure and the ecosystems around them.',
+        title: 'Product relevance',
+        body: 'Does the creator already talk about this type of product or solve this type of problem?'
       },
       {
-        name: 'Productivity',
-        description: 'Workflows, automation, no-code, SaaS and tools that help people ship work faster.',
+        title: 'Audience alignment',
+        body: 'Do the people who watch this creator match who the brand wants to reach?'
       },
       {
-        name: 'Software & SaaS',
-        description: 'B2B software, developer platforms, CRMs, analytics, and digital products people actually use.',
+        title: 'Content style match',
+        body: 'Can the product be demonstrated in a way that feels native to the creator\'s format?'
+      },
+      {
+        title: 'Commercial viability',
+        body: 'Do the rates, deliverables and usage rights work for both sides?'
+      },
+    ],
+    closingLine: 'We only reach out when all four dimensions align.',
+  },
+
+  // SECTION 06 — TECHNOLOGY CATEGORIES
+  technologyCategories: {
+    eyebrow: 'Our focus areas',
+    headline: 'Technology creators we work with.',
+    intro: 'IMPRIO focuses on creators in these technology-adjacent categories.',
+    categories: [
+      {
+        name: 'Technology & Consumer Electronics',
+        description: 'Smartphones, laptops, wearables, audio, smart home, reviews and tutorials.',
+      },
+      {
+        name: 'AI & Automation',
+        description: 'AI tools, agents, no-code automation, LLM applications and workflows.',
+      },
+      {
+        name: 'SaaS & Software',
+        description: 'Developer tools, productivity software, B2B platforms, APIs and integrations.',
+      },
+      {
+        name: 'Productivity Tools',
+        description: 'Note-taking, task management, knowledge management, workflow optimization.',
+      },
+      {
+        name: 'Digital Products & Tech Startups',
+        description: 'Apps, courses, templates, digital assets, analytics, and digital products people actually use.',
       },
       {
         name: 'AI',
@@ -167,26 +170,7 @@ export const forCreatorsContent = {
     closingParagraph: 'The categories can overlap. A creator might be a tech reviewer who also covers productivity tools. A software creator might also cover AI. A productivity creator might naturally work with SaaS products. The common thread is content that helps people understand, choose or use technology.',
   },
 
-  // SECTION 08 — CREATOR EXAMPLE
-  creatorExample: {
-    eyebrow: 'A public example of the kind of creator evidence we value',
-    headline: 'AI Learners India',
-    creatorName: 'Abhijeet Kalamkar',
-    categoryLine: 'AI agents · automation · software · Hindi',
-    metrics: [
-      { value: '160,000+', label: 'Subscribers' },
-      { value: '8.1M', label: 'Lifetime views' },
-      { value: '4.57 lakh', label: 'Watch hours' },
-    ],
-    body: 'A long-form educational creator focused on AI agents, automation and software, with content built around practical use rather than general technology news. The creator\'s public work also demonstrates something Reachzy values: commercial transparency. Past sponsorships, campaign context and performance information are useful because they show more than subscriber count. They show how an audience actually responds to a creator\'s content.',
-    closingLine: 'We carefully evaluate fit before any opportunity is presented. This is the standard we hold for every creator we work with.',
-    externalLinks: [
-      { label: 'YouTube', href: 'https://www.youtube.com/@AILearnersbyabhijeet', icon: 'youtube' },
-      { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ailearnersindia/', icon: 'linkedin' },
-    ],
-  },
-
-  // SECTION 09 — GETTING STARTED
+  // SECTION 07 — GETTING STARTED
   gettingStarted: {
     eyebrow: 'Getting started',
     headline: 'No application. No complicated onboarding.',
@@ -218,17 +202,17 @@ export const forCreatorsContent = {
     closing: 'More context is useful. It does not need to become homework before the first conversation.',
   },
 
-  // SECTION 10 — THE FIRST CONVERSATION
+  // SECTION 08 — THE FIRST CONVERSATION
   firstConversation: {
     eyebrow: 'One easy step',
     headline: 'Tell us a little about your channel.',
-    body: 'The Talk to Reachzy button opens a prepared email so you do not have to write everything from scratch. It will already contain the structure. You only fill in the details that are specific to you and send it.',
+    body: 'The Talk to IMPRIO button opens a prepared email so you do not have to write everything from scratch. It will already contain the structure. You only fill in the details that are specific to you and send it.',
     // Email template is implementation data only — NOT displayed on page
     emailTemplate: {
       subject: 'Creator Partnership — [Channel Name]',
-      body: `Hi Reachzy,
+      body: `Hi IMPRIO,
 
-I'm interested in working with Reachzy.
+I'm interested in working with IMPRIO.
 
 Channel name:
 [Fill in]
@@ -251,7 +235,7 @@ Optional — past sponsorships, campaign examples, performance information, medi
 Best,
 [Creator name]
 
-Fallback: partnerships@reachzy.space`,
+Fallback: partnerships@imprio.org`,
     },
   },
 
@@ -259,28 +243,28 @@ Fallback: partnerships@reachzy.space`,
   finalCta: {
     headline: 'Your content comes first.',
     subheadline: 'Let the right opportunities follow.',
-    body: 'You already spend enough time making the channel work. Reachzy handles more of the commercial side so you do not have to. The first conversation is lightweight. The fit comes first. The details follow.',
+    body: 'You already spend enough time making the channel work. IMPRIO handles more of the commercial side so you do not have to. The first conversation is lightweight. The fit comes first. The details follow.',
     cta: {
-      label: 'Talk to Reachzy',
-      href: 'mailto:partnerships@reachzy.space',
+      label: 'Talk to IMPRIO',
+      href: 'mailto:partnerships@imprio.org',
       variant: 'coral',
     },
-    microcopy: 'partnerships@reachzy.space',
+    microcopy: 'partnerships@imprio.org',
   },
 
   footer: {
-    logo: 'Reachzy',
+    logo: 'IMPRIO',
     links: [
       { label: 'Home', href: '/' },
       { label: 'For Brands', href: '/for-brands' },
       { label: 'For Creators', href: '/for-creators' },
     ],
     social: [
-      { label: 'Email', href: 'mailto:partnerships@reachzy.space', icon: 'mail' },
-      { label: 'LinkedIn', href: 'https://linkedin.com/company/reachzy', icon: 'linkedin' },
-      { label: 'YouTube', href: 'https://youtube.com/@reachzy', icon: 'youtube' },
-      { label: 'X', href: 'https://x.com/reachzy', icon: 'x' },
+      { label: 'Email', href: 'mailto:partnerships@imprio.org', icon: 'mail' },
+      { label: 'LinkedIn', href: 'https://linkedin.com/company/imprio', icon: 'linkedin' },
+      { label: 'YouTube', href: 'https://youtube.com/@imprio', icon: 'youtube' },
+      { label: 'X', href: 'https://x.com/imprio', icon: 'x' },
     ],
-    copyright: '© 2026 Reachzy. All rights reserved.',
+    copyright: '© 2026 IMPRIO. All rights reserved.',
   },
 };

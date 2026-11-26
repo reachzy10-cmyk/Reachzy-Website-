@@ -8,13 +8,12 @@ import { TechnologyCategories } from '@/components/sections/for-creators/technol
 import { OpportunityBriefing } from '@/components/sections/for-creators/opportunity-briefing';
 import { GettingStarted } from '@/components/sections/for-creators/getting-started';
 import { CreatorControl } from '@/components/sections/for-creators/creator-control';
-import { CreatorRoll } from '@/components/sections/creator-roll';
 import { CreatorFaq } from '@/components/sections/for-creators/creator-faq';
 import { ForCreatorsFinalCta } from '@/components/sections/for-creators/final-cta';
 
 export const metadata: Metadata = {
-  title: 'For Creators — Reachzy',
-  description: 'Explore how Reachzy approaches relevant sponsorship opportunities, clear commercial terms and creator-led decisions.',
+  title: 'For Creators — IMPRIO',
+  description: 'Explore how IMPRIO approaches relevant sponsorship opportunities, clear commercial terms and creator-led decisions for technology, AI, SaaS, and software creators.',
   alternates: { canonical: '/for-creators' },
 };
 
@@ -31,7 +30,6 @@ export default function ForCreatorsPage() {
         <OpportunityBriefing />
         <GettingStarted />
         <CreatorControl />
-        <CreatorRoll heading="A few creator profiles worth exploring." description="Explore selected profiles across technology, productivity, software and AI. Each creator brings a distinct content style and audience context." ctaHref={null} />
         <CreatorFaq />
         <ForCreatorsFinalCta />
       </main>

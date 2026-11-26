@@ -31,93 +31,101 @@
   --radius-xl: calc(var(--radius) * 1.4);
 }
 
-/* Dark-first color system - REFINED HIERARCHY */
+/* IMPRIO Brand Colors — Revolutionary, Lively, Trustworthy, Professional */
 :root {
-  color-scheme: dark;
+  color-scheme: light dark;
 
-  /* Core surfaces - deeper background for better contrast */
-  --background: oklch(0.055 0.004 260);         /* Deeper near-black */
-  --foreground: oklch(0.98 0.002 100);          /* Near-white primary text */
-  --card: oklch(0.085 0.007 260);               /* Slightly lighter than bg */
-  --card-foreground: oklch(0.98 0.002 100);     /* Near-white on cards */
-  --popover: oklch(0.085 0.007 260);
+  /* Core surfaces — lighter, more approachable than pure black */
+  --background: oklch(0.08 0.005 260);         /* Deep charcoal, not black */
+  --foreground: oklch(0.98 0.002 100);         /* Near-white primary text */
+  --card: oklch(0.11 0.008 260);               /* Elevated surface */
+  --card-foreground: oklch(0.98 0.002 100);
+  --popover: oklch(0.11 0.008 260);
   --popover-foreground: oklch(0.98 0.002 100);
 
-  /* Primary brand (cyan-blue) - vibrant but not neon */
-  --primary: oklch(0.68 0.18 220);
-  --primary-foreground: oklch(0.055 0.004 260);
+  /* Primary brand — Electric Indigo: revolutionary, tech-forward, trustworthy */
+  --primary: oklch(0.62 0.22 270);             /* Vibrant indigo */
+  --primary-foreground: oklch(0.98 0.002 100);
 
-  /* Secondary surfaces - subtle elevation */
-  --secondary: oklch(0.105 0.008 260);
-  --secondary-foreground: oklch(0.96 0.003 100);
+  /* Secondary surfaces — subtle elevation */
+  --secondary: oklch(0.15 0.01 260);
+  --secondary-foreground: oklch(0.95 0.003 100);
 
-  /* Muted - HIERARCHICAL grays */
-  --muted: oklch(0.105 0.008 260);
-  --muted-foreground: oklch(0.72 0.006 260);    /* Secondary text - readable */
-  --muted-foreground-subtle: oklch(0.52 0.006 260); /* Tertiary/metadata */
+  /* Muted — hierarchical grays with slight warmth */
+  --muted: oklch(0.15 0.01 260);
+  --muted-foreground: oklch(0.75 0.005 260);    /* Secondary text */
+  --muted-foreground-subtle: oklch(0.55 0.005 260); /* Tertiary/metadata */
 
-  /* Accent */
-  --accent: oklch(0.68 0.18 220);
-  --accent-foreground: oklch(0.055 0.004 260);
+  /* Accent — Warm Amber: energy, liveliness, revolution */
+  --accent: oklch(0.78 0.18 85);               /* Warm amber/gold */
+  --accent-foreground: oklch(0.08 0.005 260);
+
+  /* Coral — Creator-side accent: Electric Cyan for energy, liveliness */
+  --accent-coral: oklch(0.75 0.2 195);         /* Electric cyan */
+  --accent-coral-foreground: oklch(0.08 0.005 260);
 
   /* Destructive */
-  --destructive: oklch(0.65 0.2 25);
+  --destructive: oklch(0.62 0.22 25);
   --destructive-foreground: oklch(0.98 0.002 100);
 
-  /* Borders & inputs - visible but subtle */
-  --border: oklch(0.22 0.01 260);
-  --input: oklch(0.22 0.01 260);
-  --ring: oklch(0.68 0.18 220);
+  /* Borders & inputs — visible but subtle */
+  --border: oklch(0.25 0.01 260);
+  --input: oklch(0.25 0.01 260);
+  --ring: oklch(0.62 0.22 270);
 
   --radius: 0.5rem;
 }
 
-/* Coral accent for creator-side */
+/* Creator-side accent — Electric Cyan for energy */
 :root {
-  --accent-coral: oklch(0.72 0.17 25);
-  --accent-coral-foreground: oklch(0.055 0.004 260);
-  --accent-subtle: oklch(0.16 0.045 220);
-  --success: oklch(0.68 0.14 145);
-  --error: oklch(0.65 0.2 25);
+  --accent-creator: oklch(0.75 0.2 195);       /* Electric cyan */
+  --accent-creator-foreground: oklch(0.08 0.005 260);
+  --accent-subtle: oklch(0.18 0.05 270);
+  --success: oklch(0.65 0.16 145);
+  --error: oklch(0.62 0.22 25);
 }
 
-/* Light mode - balanced */
+/* Light mode — clean, professional, high contrast */
 @media (prefers-color-scheme: light) {
   :root {
     color-scheme: light;
 
-    --background: oklch(1.0 0 0);
-    --foreground: oklch(0.06 0.004 260);
+    --background: oklch(0.99 0.001 260);       /* Near-white with cool tint */
+    --foreground: oklch(0.12 0.005 260);       /* Deep charcoal text */
     --card: oklch(1.0 0 0);
-    --card-foreground: oklch(0.06 0.004 260);
+    --card-foreground: oklch(0.12 0.005 260);
     --popover: oklch(1.0 0 0);
-    --popover-foreground: oklch(0.06 0.004 260);
+    --popover-foreground: oklch(0.12 0.005 260);
 
-    --primary: oklch(0.5 0.18 220);
-    --primary-foreground: oklch(1.0 0 0);
+    --primary: oklch(0.5 0.22 270);            /* Indigo */
+    --primary-foreground: oklch(0.98 0.002 100);
 
-    --secondary: oklch(0.965 0.003 100);
-    --secondary-foreground: oklch(0.06 0.004 260);
+    --secondary: oklch(0.96 0.003 260);
+    --secondary-foreground: oklch(0.12 0.005 260);
 
-    --muted: oklch(0.965 0.003 100);
-    --muted-foreground: oklch(0.38 0.01 260);
-    --muted-foreground-subtle: oklch(0.52 0.01 260);
+    --muted: oklch(0.96 0.003 260);
+    --muted-foreground: oklch(0.42 0.01 260);
+    --muted-foreground-subtle: oklch(0.55 0.01 260);
 
-    --accent: oklch(0.5 0.18 220);
-    --accent-foreground: oklch(1.0 0 0);
+    --accent: oklch(0.62 0.18 85);             /* Amber */
+    --accent-foreground: oklch(0.98 0.002 100);
 
-    --destructive: oklch(0.55 0.2 25);
-    --destructive-foreground: oklch(1.0 0 0);
+    /* Coral — Creator-side accent for light mode */
+    --accent-coral: oklch(0.55 0.18 195);      /* Cyan */
+    --accent-coral-foreground: oklch(0.98 0.002 100);
 
-    --border: oklch(0.88 0.003 100);
-    --input: oklch(0.88 0.003 100);
-    --ring: oklch(0.5 0.18 220);
+    --destructive: oklch(0.55 0.22 25);
+    --destructive-foreground: oklch(0.98 0.002 100);
 
-    --accent-coral: oklch(0.53 0.19 25);
-    --accent-coral-foreground: oklch(1.0 0 0);
-    --accent-subtle: oklch(0.93 0.02 220);
-    --success: oklch(0.5 0.14 145);
-    --error: oklch(0.55 0.2 25);
+    --border: oklch(0.88 0.003 260);
+    --input: oklch(0.88 0.003 260);
+    --ring: oklch(0.5 0.22 270);
+
+    --accent-creator: oklch(0.55 0.18 195);    /* Cyan */
+    --accent-creator-foreground: oklch(0.98 0.002 100);
+    --accent-subtle: oklch(0.92 0.03 270);
+    --success: oklch(0.55 0.14 145);
+    --error: oklch(0.55 0.22 25);
   }
 }
 

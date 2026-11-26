@@ -20,10 +20,10 @@ const newsreader = Newsreader({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://reachzy.space'),
-  title: 'Reachzy — Influencer Marketing Agency',
+  metadataBase: new URL('https://imprio.org'),
+  title: 'IMPRIO — Influencer Marketing Agency for Technology Brands',
   description:
-    'Reachzy is an influencer marketing agency. We connect brands with relevant creators and run campaigns from brief to delivery.',
+    'IMPRIO is an India-based influencer marketing agency connecting technology, AI, SaaS, and software brands with relevant creators. We handle creator research, brand-creator matching, outreach, negotiations, briefing, deliverables, timelines, campaign coordination, usage rights and reporting.',
   icons: {
     icon: [
       {
@@ -31,23 +31,19 @@ export const metadata: Metadata = {
         type: 'image/x-icon',
       },
       {
-        url: '/reachzy-icon-32.png',
-        type: 'image/png',
-        sizes: '32x32',
-      },
-      {
-        url: '/reachzy-icon-512.png',
+        url: '/impro-favicon.png',
         type: 'image/png',
         sizes: '512x512',
       },
     ],
-    apple: '/reachzy-icon-180.png',
+    apple: '/impro-favicon.png',
   },
   openGraph: {
-    title: 'Reachzy — Influencer Marketing Agency',
+    title: 'IMPRIO — Influencer Marketing Agency for Technology Brands',
     description:
-      'We connect brands with relevant creators and run campaigns from brief to delivery.',
+      'IMPRIO connects technology, AI, SaaS, and software brands with relevant creators. We manage the commercial and operational side of creator collaborations.',
     type: 'website',
+    siteName: 'IMPRIO',
   },
 }
 

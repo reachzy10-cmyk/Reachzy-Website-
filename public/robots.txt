@@ -1,4 +1,4 @@
-# Robots.txt for Reachzy
+# Robots.txt for IMPRIO
 User-agent: *
 Allow: /
 
@@ -8,4 +8,4 @@ Disallow: /_next/
 Disallow: /static/
 
 # Sitemap
-Sitemap: https://reachzy.space/sitemap.xml
+Sitemap: https://imprio.org/sitemap.xml

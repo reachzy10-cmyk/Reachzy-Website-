@@ -31,7 +31,7 @@ export function Hero() {
                 <Link href={hero.secondaryCta.href}>{hero.secondaryCta.label}</Link>
               </Button>
             </div>
-            <div className="mt-8 flex flex-wrap gap-2" aria-label="Reachzy focus areas">
+            <div className="mt-8 flex flex-wrap gap-2" aria-label="IMPRIO focus areas">
               {['Technology', 'AI & automation', 'Software & SaaS', 'Productivity'].map((item) => (
                 <span key={item} className="rounded-full border border-border px-3 py-1.5 text-xs text-muted-foreground">{item}</span>
               ))}

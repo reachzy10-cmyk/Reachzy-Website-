@@ -3,17 +3,17 @@ export const homeContent = {
   hero: {
     eyebrow: 'Creator marketing built around fit',
     headline: 'Start with the product. Find the creator who makes sense for it.',
-    body: 'Reachzy focuses on technology, productivity, software, SaaS and AI. We look at what a product does, who it is for and which creators already make content that gives it a natural place in the conversation.',
+    body: 'IMPRIO focuses on technology, productivity, software, SaaS and AI. We look at what a product does, who it is for and which creators already make content that gives it a natural place in the conversation.',
     primaryCta: { label: 'Explore for brands', href: '/for-brands', variant: 'primary' },
     secondaryCta: { label: 'Explore for creators', href: '/for-creators', variant: 'ghost' },
   },
   philosophy: {
-    eyebrow: 'The idea behind Reachzy',
+    eyebrow: 'The idea behind IMPRIO',
     headline: 'A large audience is easy to find. The right reason to care is harder.',
     body: [
       'Subscriber count tells you how many people follow a creator.',
       'It does not explain why they follow, what they learn, or whether a product belongs in the content they already choose to watch.',
-      'That is where Reachzy starts: with the product, the creator, the audience and the reason a collaboration should exist in the first place.',
+      'That is where IMPRIO starts: with the product, the creator, the audience and the reason a collaboration should exist in the first place.',
     ],
   },
   whatWeDo: {
@@ -23,13 +23,13 @@ export const homeContent = {
     steps: [
       { title: 'Understand the brief', body: 'Clarify the product, audience, objective, budget and timing.' },
       { title: 'Research creator fit', body: 'Review relevant content, audience context, recent performance and sponsorship suitability.' },
-      { title: 'Recommend a format', body: 'Match the product and objective to a format that makes sense for the creator’s content.' },
+      { title: 'Recommend a format', body: 'Match the product and objective to a format that makes sense for the creator\'s content.' },
       { title: 'Structure the collaboration', body: 'Set out deliverables, commercial terms, usage rights and responsibilities before commitment.' },
       { title: 'Coordinate and review', body: 'Keep communication and agreed milestones organised, then review the available campaign results.' },
     ],
   },
   dualPath: {
-    eyebrow: 'Two ways to work with Reachzy',
+    eyebrow: 'Two ways to work with IMPRIO',
     headline: 'Different starting points. Same attention to fit.',
     brandCard: {
       headline: 'For brands',
@@ -43,9 +43,9 @@ export const homeContent = {
     },
   },
   finalCta: {
-    headline: 'Tell us the brief. We’ll come back with a creator and a plan.',
+    headline: 'Tell us the brief. We\'ll come back with a creator and a plan.',
     body: 'Share the product, the audience you want to reach and what the campaign should achieve. We can use that context to discuss relevant creator options and a possible scope.',
-    cta: { label: 'Start a campaign conversation', href: 'mailto:partnerships@reachzy.space?subject=Campaign%20enquiry', variant: 'primary' },
+    cta: { label: 'Start a campaign conversation', href: 'mailto:partnerships@imprio.org?subject=Campaign%20enquiry', variant: 'primary' },
   },
 };
 export type HomeContent = typeof homeContent;
